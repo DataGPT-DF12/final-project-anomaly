@@ -1,0 +1,42 @@
+[2024-06-07T03:45:58.776+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alert_combine.detect_and_alert scheduled__2024-06-07T01:00:00+00:00 [queued]>
+[2024-06-07T03:45:58.850+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alert_combine.detect_and_alert scheduled__2024-06-07T01:00:00+00:00 [queued]>
+[2024-06-07T03:45:58.852+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-06-07T03:45:59.258+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): detect_and_alert> on 2024-06-07 01:00:00+00:00
+[2024-06-07T03:45:59.296+0000] {standard_task_runner.py:60} INFO - Started process 4828 to run task
+[2024-06-07T03:45:59.368+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'alert_combine', 'detect_and_alert', 'scheduled__2024-06-07T01:00:00+00:00', '--job-id', '1292', '--raw', '--subdir', 'DAGS_FOLDER/alert_combine.py', '--cfg-path', '/tmp/tmp98ibt93q']
+[2024-06-07T03:45:59.390+0000] {standard_task_runner.py:88} INFO - Job 1292: Subtask detect_and_alert
+[2024-06-07T03:46:00.630+0000] {task_command.py:423} INFO - Running <TaskInstance: alert_combine.detect_and_alert scheduled__2024-06-07T01:00:00+00:00 [running]> on host e396011bc044
+[2024-06-07T03:46:00.822+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alert_combine' AIRFLOW_CTX_TASK_ID='detect_and_alert' AIRFLOW_CTX_EXECUTION_DATE='2024-06-07T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-07T01:00:00+00:00'
+[2024-06-07T03:46:02.486+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/sklearn/base.py:348 InconsistentVersionWarning: Trying to unpickle estimator ExtraTreeRegressor from version 1.2.2 when using version 1.3.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+[2024-06-07T03:46:02.503+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/alert_combine.py", line 25, in detect_anomalies
+    model = joblib.load('/opt/airflow/dags/network_model/isolation_forest_model.pkl')
+  File "/home/airflow/.local/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 658, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+  File "/home/airflow/.local/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 577, in _unpickle
+    obj = unpickler.load()
+  File "/usr/local/lib/python3.8/pickle.py", line 1212, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 402, in load_build
+    Unpickler.load_build(self)
+  File "/usr/local/lib/python3.8/pickle.py", line 1705, in load_build
+    setstate(state)
+  File "sklearn/tree/_tree.pyx", line 728, in sklearn.tree._tree.Tree.__setstate__
+  File "sklearn/tree/_tree.pyx", line 1434, in sklearn.tree._tree._check_node_ndarray
+ValueError: node array from the pickle has an incompatible dtype:
+- expected: {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}
+- got     : [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]
+[2024-06-07T03:46:02.574+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=alert_combine, task_id=detect_and_alert, execution_date=20240607T010000, start_date=20240607T034558, end_date=20240607T034602
+[2024-06-07T03:46:02.643+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1292 for task detect_and_alert (node array from the pickle has an incompatible dtype:
+- expected: {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}
+- got     : [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]; 4828)
+[2024-06-07T03:46:02.733+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-06-07T03:46:03.315+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,30 @@
+[2024-05-30T09:19:17.426+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_run.dbt_run manual__2024-05-30T09:18:53.084430+00:00 [queued]>
+[2024-05-30T09:19:17.462+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_run.dbt_run manual__2024-05-30T09:18:53.084430+00:00 [queued]>
+[2024-05-30T09:19:17.464+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-05-30T09:19:17.515+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): dbt_run> on 2024-05-30 09:18:53.084430+00:00
+[2024-05-30T09:19:17.540+0000] {standard_task_runner.py:60} INFO - Started process 65973 to run task
+[2024-05-30T09:19:17.555+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dbt_run', 'dbt_run', 'manual__2024-05-30T09:18:53.084430+00:00', '--job-id', '419', '--raw', '--subdir', 'DAGS_FOLDER/dbt_run.py', '--cfg-path', '/tmp/tmphbeq2q8i']
+[2024-05-30T09:19:17.562+0000] {standard_task_runner.py:88} INFO - Job 419: Subtask dbt_run
+[2024-05-30T09:19:17.818+0000] {task_command.py:423} INFO - Running <TaskInstance: dbt_run.dbt_run manual__2024-05-30T09:18:53.084430+00:00 [running]> on host dd00f1ab2b6c
+[2024-05-30T09:19:18.207+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_run' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2024-05-30T09:18:53.084430+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-30T09:18:53.084430+00:00'
+[2024-05-30T09:19:18.353+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dbt_run.py", line 24, in run_dbt
+    subprocess.run(["dbt", "run", "--select", "clean_network"], check=True, cwd=DBT_PROJECT_PATH)
+  File "/usr/local/lib/python3.8/subprocess.py", line 493, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/local/lib/python3.8/subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/local/lib/python3.8/subprocess.py", line 1720, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: 'dbt'
+[2024-05-30T09:19:18.458+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=dbt_run, task_id=dbt_run, execution_date=20240530T091853, start_date=20240530T091917, end_date=20240530T091918
+[2024-05-30T09:19:18.580+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 419 for task dbt_run ([Errno 13] Permission denied: 'dbt'; 65973)
+[2024-05-30T09:19:18.664+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-05-30T09:19:18.775+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

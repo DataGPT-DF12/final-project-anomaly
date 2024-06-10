@@ -1,0 +1,17 @@
+[2024-06-03T13:27:12.261+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alert.detect_and_alert manual__2024-06-03T13:27:10.513137+00:00 [queued]>
+[2024-06-03T13:27:12.285+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alert.detect_and_alert manual__2024-06-03T13:27:10.513137+00:00 [queued]>
+[2024-06-03T13:27:12.287+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-06-03T13:27:12.330+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): detect_and_alert> on 2024-06-03 13:27:10.513137+00:00
+[2024-06-03T13:27:12.342+0000] {standard_task_runner.py:60} INFO - Started process 4309 to run task
+[2024-06-03T13:27:12.348+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'alert', 'detect_and_alert', 'manual__2024-06-03T13:27:10.513137+00:00', '--job-id', '857', '--raw', '--subdir', 'DAGS_FOLDER/alert.py', '--cfg-path', '/tmp/tmp5c1somw4']
+[2024-06-03T13:27:12.351+0000] {standard_task_runner.py:88} INFO - Job 857: Subtask detect_and_alert
+[2024-06-03T13:27:12.478+0000] {task_command.py:423} INFO - Running <TaskInstance: alert.detect_and_alert manual__2024-06-03T13:27:10.513137+00:00 [running]> on host 0a54be82eb52
+[2024-06-03T13:27:12.660+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alert' AIRFLOW_CTX_TASK_ID='detect_and_alert' AIRFLOW_CTX_EXECUTION_DATE='2024-06-03T13:27:10.513137+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-03T13:27:10.513137+00:00'
+[2024-06-03T13:27:13.802+0000] {logging_mixin.py:188} INFO - Traceback (most recent call last):
+  File "/opt/***/dags/network_model/anomaly_trigger.py", line 4, in <module>
+    import joblib
+ModuleNotFoundError: No module named 'joblib'
+[2024-06-03T13:27:13.843+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-06-03T13:27:13.858+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=alert, task_id=detect_and_alert, execution_date=20240603T132710, start_date=20240603T132712, end_date=20240603T132713
+[2024-06-03T13:27:13.894+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-06-03T13:27:13.928+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

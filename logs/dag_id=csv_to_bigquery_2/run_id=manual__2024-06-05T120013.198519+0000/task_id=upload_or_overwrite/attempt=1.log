@@ -1,0 +1,13 @@
+[2024-06-05T12:00:25.099+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: csv_to_bigquery_2.upload_or_overwrite manual__2024-06-05T12:00:13.198519+00:00 [queued]>
+[2024-06-05T12:00:25.112+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: csv_to_bigquery_2.upload_or_overwrite manual__2024-06-05T12:00:13.198519+00:00 [queued]>
+[2024-06-05T12:00:25.113+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-06-05T12:00:25.132+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_or_overwrite> on 2024-06-05 12:00:13.198519+00:00
+[2024-06-05T12:00:25.145+0000] {standard_task_runner.py:60} INFO - Started process 36411 to run task
+[2024-06-05T12:00:25.148+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'csv_to_bigquery_2', 'upload_or_overwrite', 'manual__2024-06-05T12:00:13.198519+00:00', '--job-id', '1217', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_bigquery_2.py', '--cfg-path', '/tmp/tmp8k25_1fx']
+[2024-06-05T12:00:25.151+0000] {standard_task_runner.py:88} INFO - Job 1217: Subtask upload_or_overwrite
+[2024-06-05T12:00:25.266+0000] {task_command.py:423} INFO - Running <TaskInstance: csv_to_bigquery_2.upload_or_overwrite manual__2024-06-05T12:00:13.198519+00:00 [running]> on host fc7c6afa3a41
+[2024-06-05T12:00:25.365+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='csv_to_bigquery_2' AIRFLOW_CTX_TASK_ID='upload_or_overwrite' AIRFLOW_CTX_EXECUTION_DATE='2024-06-05T12:00:13.198519+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-05T12:00:13.198519+00:00'
+[2024-06-05T12:00:25.401+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-06-05T12:00:25.414+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=csv_to_bigquery_2, task_id=upload_or_overwrite, execution_date=20240605T120013, start_date=20240605T120025, end_date=20240605T120025
+[2024-06-05T12:00:25.483+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-06-05T12:00:25.516+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

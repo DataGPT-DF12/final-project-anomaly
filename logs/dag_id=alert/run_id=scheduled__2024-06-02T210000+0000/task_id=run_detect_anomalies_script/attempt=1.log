@@ -1,0 +1,14 @@
+[2024-06-03T07:17:29.416+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alert.run_detect_anomalies_script scheduled__2024-06-02T21:00:00+00:00 [queued]>
+[2024-06-03T07:17:29.639+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alert.run_detect_anomalies_script scheduled__2024-06-02T21:00:00+00:00 [queued]>
+[2024-06-03T07:17:29.643+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-06-03T07:17:30.129+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): run_detect_anomalies_script> on 2024-06-02 21:00:00+00:00
+[2024-06-03T07:17:30.309+0000] {standard_task_runner.py:60} INFO - Started process 1926 to run task
+[2024-06-03T07:17:30.792+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'alert', 'run_detect_anomalies_script', 'scheduled__2024-06-02T21:00:00+00:00', '--job-id', '775', '--raw', '--subdir', 'DAGS_FOLDER/alert.py', '--cfg-path', '/tmp/tmpra7vtast']
+[2024-06-03T07:17:31.055+0000] {standard_task_runner.py:88} INFO - Job 775: Subtask run_detect_anomalies_script
+[2024-06-03T07:17:33.167+0000] {task_command.py:423} INFO - Running <TaskInstance: alert.run_detect_anomalies_script scheduled__2024-06-02T21:00:00+00:00 [running]> on host cce95859c81a
+[2024-06-03T07:17:36.228+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alert' AIRFLOW_CTX_TASK_ID='run_detect_anomalies_script' AIRFLOW_CTX_EXECUTION_DATE='2024-06-02T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-02T21:00:00+00:00'
+[2024-06-03T07:17:36.837+0000] {logging_mixin.py:188} INFO - python: can't open file '/opt/***/network_model/anomaly_trigger.py': [Errno 2] No such file or directory
+[2024-06-03T07:17:36.929+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-06-03T07:17:37.010+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=alert, task_id=run_detect_anomalies_script, execution_date=20240602T210000, start_date=20240603T071729, end_date=20240603T071737
+[2024-06-03T07:17:37.203+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-06-03T07:17:37.625+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

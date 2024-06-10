@@ -1,0 +1,347 @@
+[2024-06-04T14:51:04.213+0000] {processor.py:161} INFO - Started process (PID=241) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:51:04.224+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:51:04.228+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:51:04.227+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:51:04.398+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:51:05.041+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:51:05.040+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:bigquery_transform_python
+[2024-06-04T14:51:05.058+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:51:05.057+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:bigquery_transform_python
+[2024-06-04T14:51:05.071+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:51:05.070+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:bigquery_transform_python
+[2024-06-04T14:51:05.072+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:51:05.072+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:51:05.098+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:51:05.098+0000] {dag.py:3058} INFO - Creating ORM DAG for bigquery_transform_python
+[2024-06-04T14:51:05.113+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:51:05.113+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-03 00:00:00+00:00, run_after=2024-06-04 00:00:00+00:00
+[2024-06-04T14:51:05.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 1.023 seconds
+[2024-06-04T14:51:35.263+0000] {processor.py:161} INFO - Started process (PID=355) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:51:35.267+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:51:35.271+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:51:35.271+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:51:35.405+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:51:35.501+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:51:35.500+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:51:35.566+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:51:35.566+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-03 00:00:00+00:00, run_after=2024-06-04 00:00:00+00:00
+[2024-06-04T14:51:35.609+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.356 seconds
+[2024-06-04T14:52:06.401+0000] {processor.py:161} INFO - Started process (PID=467) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:52:06.403+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:52:06.406+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:52:06.405+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:52:06.432+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:52:06.467+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:52:06.466+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:52:06.497+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:52:06.497+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-03 00:00:00+00:00, run_after=2024-06-04 00:00:00+00:00
+[2024-06-04T14:52:06.531+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.134 seconds
+[2024-06-04T14:52:36.629+0000] {processor.py:161} INFO - Started process (PID=579) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:52:36.633+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:52:36.635+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:52:36.635+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:52:36.657+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:52:36.689+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:52:36.688+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:52:36.723+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:52:36.722+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-03 00:00:00+00:00, run_after=2024-06-04 00:00:00+00:00
+[2024-06-04T14:52:36.745+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.121 seconds
+[2024-06-04T14:53:06.844+0000] {processor.py:161} INFO - Started process (PID=691) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:53:06.846+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:53:06.848+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:53:06.847+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:53:06.872+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:53:06.894+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:53:06.894+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:53:06.919+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:53:06.918+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-03 00:00:00+00:00, run_after=2024-06-04 00:00:00+00:00
+[2024-06-04T14:53:06.944+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.103 seconds
+[2024-06-04T14:53:37.198+0000] {processor.py:161} INFO - Started process (PID=803) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:53:37.200+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:53:37.203+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:53:37.203+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:53:37.226+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:53:37.255+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:53:37.254+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:53:37.284+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:53:37.283+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-03 00:00:00+00:00, run_after=2024-06-04 00:00:00+00:00
+[2024-06-04T14:53:37.314+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.120 seconds
+[2024-06-04T14:54:07.868+0000] {processor.py:161} INFO - Started process (PID=969) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:54:07.869+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:54:07.872+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:54:07.871+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:54:07.898+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:54:07.928+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:54:07.928+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:54:07.959+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:54:07.959+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T14:54:07.984+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.120 seconds
+[2024-06-04T14:54:38.174+0000] {processor.py:161} INFO - Started process (PID=1082) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:54:38.176+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:54:38.179+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:54:38.178+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:54:38.213+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:54:38.246+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:54:38.245+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:54:38.271+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:54:38.271+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T14:54:38.296+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.127 seconds
+[2024-06-04T14:55:09.027+0000] {processor.py:161} INFO - Started process (PID=1194) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:55:09.028+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:55:09.031+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:55:09.031+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:55:09.069+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:55:09.103+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:55:09.102+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:55:09.131+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:55:09.130+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T14:55:09.160+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.136 seconds
+[2024-06-04T14:55:39.389+0000] {processor.py:161} INFO - Started process (PID=1306) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:55:39.391+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:55:39.396+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:55:39.395+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:55:39.426+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:55:39.467+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:55:39.466+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:55:39.502+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:55:39.501+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T14:55:39.536+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.151 seconds
+[2024-06-04T14:56:10.440+0000] {processor.py:161} INFO - Started process (PID=1418) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:56:10.441+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:56:10.444+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:56:10.443+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:56:10.467+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:56:10.502+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:56:10.502+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:56:10.531+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:56:10.531+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T14:56:10.562+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.125 seconds
+[2024-06-04T14:56:40.694+0000] {processor.py:161} INFO - Started process (PID=1530) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:56:40.695+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:56:40.698+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:56:40.697+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:56:40.720+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:56:40.749+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:56:40.748+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:56:40.775+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:56:40.775+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T14:56:40.807+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.116 seconds
+[2024-06-04T14:57:11.103+0000] {processor.py:161} INFO - Started process (PID=1642) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:57:11.105+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:57:11.108+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:57:11.107+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:57:11.130+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:57:11.157+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:57:11.156+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:57:11.185+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:57:11.184+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T14:57:11.212+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.113 seconds
+[2024-06-04T14:57:41.650+0000] {processor.py:161} INFO - Started process (PID=1754) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:57:41.652+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:57:41.655+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:57:41.654+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:57:41.675+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:57:41.711+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:57:41.710+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:57:41.739+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:57:41.739+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T14:57:41.767+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.120 seconds
+[2024-06-04T14:58:12.689+0000] {processor.py:161} INFO - Started process (PID=1866) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:58:12.691+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:58:12.693+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:58:12.693+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:58:12.715+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:58:12.738+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:58:12.738+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:58:12.765+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:58:12.764+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T14:58:12.789+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.103 seconds
+[2024-06-04T14:58:43.055+0000] {processor.py:161} INFO - Started process (PID=1978) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:58:43.057+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:58:43.060+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:58:43.060+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:58:43.081+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:58:43.107+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:58:43.106+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:58:43.133+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:58:43.132+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T14:58:43.155+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.104 seconds
+[2024-06-04T14:59:13.267+0000] {processor.py:161} INFO - Started process (PID=2144) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:59:13.269+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:59:13.272+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:59:13.272+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:59:13.295+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:59:13.323+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:59:13.323+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:59:13.351+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:59:13.351+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T14:59:13.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.110 seconds
+[2024-06-04T14:59:43.578+0000] {processor.py:161} INFO - Started process (PID=2256) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:59:43.579+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T14:59:43.582+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:59:43.582+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:59:43.603+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T14:59:43.627+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:59:43.627+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T14:59:43.652+0000] {logging_mixin.py:188} INFO - [2024-06-04T14:59:43.652+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T14:59:43.676+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.101 seconds
+[2024-06-04T15:00:14.039+0000] {processor.py:161} INFO - Started process (PID=2382) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:00:14.041+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:00:14.044+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:00:14.044+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:00:14.071+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:00:14.099+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:00:14.098+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:00:14.127+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:00:14.126+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:00:14.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.117 seconds
+[2024-06-04T15:00:44.421+0000] {processor.py:161} INFO - Started process (PID=2494) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:00:44.423+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:00:44.426+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:00:44.425+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:00:44.447+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:00:44.472+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:00:44.471+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:00:44.497+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:00:44.497+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:00:44.520+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.101 seconds
+[2024-06-04T15:01:14.914+0000] {processor.py:161} INFO - Started process (PID=2606) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:01:14.920+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:01:14.926+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:01:14.925+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:01:14.992+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:01:15.088+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:01:15.087+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:01:15.175+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:01:15.175+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:01:15.224+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.321 seconds
+[2024-06-04T15:01:45.974+0000] {processor.py:161} INFO - Started process (PID=2718) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:01:45.976+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:01:45.979+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:01:45.978+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:01:46.002+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:01:46.030+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:01:46.029+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:01:46.057+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:01:46.057+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:01:46.081+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.111 seconds
+[2024-06-04T15:02:16.374+0000] {processor.py:161} INFO - Started process (PID=2830) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:02:16.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:02:16.378+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:02:16.377+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:02:16.398+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:02:16.421+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:02:16.420+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:02:16.447+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:02:16.446+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:02:16.470+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.099 seconds
+[2024-06-04T15:02:46.658+0000] {processor.py:161} INFO - Started process (PID=2942) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:02:46.660+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:02:46.663+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:02:46.662+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:02:46.687+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:02:46.713+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:02:46.712+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:02:46.736+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:02:46.736+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:02:46.762+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.107 seconds
+[2024-06-04T15:03:16.974+0000] {processor.py:161} INFO - Started process (PID=3054) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:03:16.976+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:03:16.979+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:03:16.978+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:03:17.003+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:03:17.038+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:03:17.037+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:03:17.067+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:03:17.067+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:03:17.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.126 seconds
+[2024-06-04T15:03:47.312+0000] {processor.py:161} INFO - Started process (PID=3166) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:03:47.314+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:03:47.316+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:03:47.316+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:03:47.335+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:03:47.359+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:03:47.359+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:03:47.382+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:03:47.382+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:03:47.406+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.096 seconds
+[2024-06-04T15:04:17.876+0000] {processor.py:161} INFO - Started process (PID=3278) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:04:17.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:04:17.880+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:04:17.880+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:04:17.903+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:04:17.927+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:04:17.927+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:04:17.952+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:04:17.952+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:04:17.977+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.104 seconds
+[2024-06-04T15:04:48.436+0000] {processor.py:161} INFO - Started process (PID=3374) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:04:48.438+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:04:48.441+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:04:48.441+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:04:48.468+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:04:48.496+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:04:48.496+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:04:48.537+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:04:48.536+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:04:48.594+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.165 seconds
+[2024-06-04T15:05:19.043+0000] {processor.py:161} INFO - Started process (PID=3500) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:05:19.046+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:05:19.050+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:05:19.049+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:05:19.074+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:05:19.097+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:05:19.097+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:05:19.124+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:05:19.124+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:05:19.149+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.109 seconds
+[2024-06-04T15:05:49.792+0000] {processor.py:161} INFO - Started process (PID=3612) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:05:49.793+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:05:49.796+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:05:49.795+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:05:49.822+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:05:49.850+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:05:49.849+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:05:49.880+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:05:49.879+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:05:49.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.113 seconds
+[2024-06-04T15:06:20.748+0000] {processor.py:161} INFO - Started process (PID=3724) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:06:20.749+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:06:20.751+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:06:20.750+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:06:20.770+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:06:20.794+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:06:20.793+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:06:20.819+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:06:20.819+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:06:20.846+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.101 seconds
+[2024-06-04T15:06:51.289+0000] {processor.py:161} INFO - Started process (PID=3836) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:06:51.291+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:06:51.292+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:06:51.292+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:06:51.314+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:06:51.337+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:06:51.337+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:06:51.361+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:06:51.361+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:06:51.385+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.099 seconds
+[2024-06-04T15:07:21.877+0000] {processor.py:161} INFO - Started process (PID=3948) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:07:21.879+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:07:21.881+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:07:21.881+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:07:21.903+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:07:21.927+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:07:21.927+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:07:21.952+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:07:21.951+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:07:21.977+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.103 seconds
+[2024-06-04T15:07:52.575+0000] {processor.py:161} INFO - Started process (PID=4060) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:07:52.577+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:07:52.580+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:07:52.580+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:07:52.604+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:07:52.626+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:07:52.625+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:07:52.650+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:07:52.650+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:07:52.675+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.103 seconds
+[2024-06-04T15:08:23.169+0000] {processor.py:161} INFO - Started process (PID=4172) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:08:23.170+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:08:23.172+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:08:23.172+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:08:23.194+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:08:23.217+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:08:23.217+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:08:23.243+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:08:23.243+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:08:23.266+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.101 seconds
+[2024-06-04T15:08:53.639+0000] {processor.py:161} INFO - Started process (PID=4284) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:08:53.641+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:08:53.643+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:08:53.643+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:08:53.665+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:08:53.688+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:08:53.688+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:08:53.712+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:08:53.712+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:08:53.732+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.096 seconds
+[2024-06-04T15:09:24.401+0000] {processor.py:161} INFO - Started process (PID=4397) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:09:24.403+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:09:24.405+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:09:24.404+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:09:24.425+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:09:24.449+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:09:24.448+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:09:24.474+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:09:24.474+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:09:24.500+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.102 seconds
+[2024-06-04T15:09:55.082+0000] {processor.py:161} INFO - Started process (PID=4509) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:09:55.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:09:55.085+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:09:55.085+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:09:55.107+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:09:55.135+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:09:55.134+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:09:55.159+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:09:55.159+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:09:55.183+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.105 seconds
+[2024-06-04T15:10:25.660+0000] {processor.py:161} INFO - Started process (PID=4621) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:10:25.662+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:10:25.664+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:10:25.664+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:10:25.685+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:10:25.713+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:10:25.712+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:10:25.740+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:10:25.739+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:10:25.767+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.111 seconds
+[2024-06-04T15:10:55.966+0000] {processor.py:161} INFO - Started process (PID=4733) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:10:55.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:10:55.976+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:10:55.975+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:10:56.021+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:10:56.065+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:10:56.064+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:10:56.101+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:10:56.101+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:10:56.128+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.167 seconds
+[2024-06-04T15:11:26.845+0000] {processor.py:161} INFO - Started process (PID=4845) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:11:26.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:11:26.851+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:11:26.851+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:11:26.876+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:11:26.905+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:11:26.904+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:11:26.930+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:11:26.930+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:11:26.954+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.112 seconds
+[2024-06-04T15:11:46.493+0000] {processor.py:161} INFO - Started process (PID=4957) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:11:46.494+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:11:46.496+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:11:46.496+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:11:46.536+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:11:46.565+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:11:46.565+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:11:46.592+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:11:46.591+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:11:46.624+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.134 seconds
+[2024-06-04T15:12:17.508+0000] {processor.py:161} INFO - Started process (PID=5096) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:12:17.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:12:17.513+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:12:17.512+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:12:17.537+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:12:17.578+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:12:17.577+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:12:17.610+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:12:17.610+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:12:17.636+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.131 seconds
+[2024-06-04T15:12:48.171+0000] {processor.py:161} INFO - Started process (PID=5208) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:12:48.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:12:48.176+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:12:48.175+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:12:48.200+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:12:48.227+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:12:48.226+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:12:48.255+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:12:48.255+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:12:48.279+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.111 seconds
+[2024-06-04T15:13:18.558+0000] {processor.py:161} INFO - Started process (PID=5320) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:13:18.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:13:18.562+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:13:18.561+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:13:18.585+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:13:18.615+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:13:18.614+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:13:18.656+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:13:18.655+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:13:18.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.144 seconds
+[2024-06-04T15:13:48.871+0000] {processor.py:161} INFO - Started process (PID=5432) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:13:48.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:13:48.875+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:13:48.875+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:13:48.900+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:13:48.928+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:13:48.927+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:13:48.954+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:13:48.954+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:13:48.981+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.114 seconds
+[2024-06-04T15:14:19.284+0000] {processor.py:161} INFO - Started process (PID=5544) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:14:19.285+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:14:19.287+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:14:19.286+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:14:19.306+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:14:19.329+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:14:19.329+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:14:19.355+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:14:19.354+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:14:19.379+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.098 seconds
+[2024-06-04T15:14:49.512+0000] {processor.py:161} INFO - Started process (PID=5656) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:14:49.514+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:14:49.517+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:14:49.516+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:14:49.539+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:14:49.564+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:14:49.564+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:14:49.592+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:14:49.592+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:14:49.616+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.107 seconds
+[2024-06-04T15:15:19.975+0000] {processor.py:161} INFO - Started process (PID=5768) to work on /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:15:19.977+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bigquery_transform_python.py for tasks to queue
+[2024-06-04T15:15:19.979+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:15:19.979+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:15:20.001+0000] {processor.py:840} INFO - DAG(s) 'bigquery_transform_python' retrieved from /opt/airflow/dags/bigquery_transform_python.py
+[2024-06-04T15:15:20.025+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:15:20.025+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-06-04T15:15:20.049+0000] {logging_mixin.py:188} INFO - [2024-06-04T15:15:20.049+0000] {dag.py:3823} INFO - Setting next_dagrun for bigquery_transform_python to 2024-06-04 00:00:00+00:00, run_after=2024-06-05 00:00:00+00:00
+[2024-06-04T15:15:20.072+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bigquery_transform_python.py took 0.099 seconds

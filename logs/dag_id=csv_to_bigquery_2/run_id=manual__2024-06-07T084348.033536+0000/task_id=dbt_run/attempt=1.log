@@ -1,0 +1,13 @@
+[2024-06-07T08:44:31.680+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: csv_to_bigquery_2.dbt_run manual__2024-06-07T08:43:48.033536+00:00 [queued]>
+[2024-06-07T08:44:31.694+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: csv_to_bigquery_2.dbt_run manual__2024-06-07T08:43:48.033536+00:00 [queued]>
+[2024-06-07T08:44:31.696+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-06-07T08:44:31.717+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): dbt_run> on 2024-06-07 08:43:48.033536+00:00
+[2024-06-07T08:44:31.728+0000] {standard_task_runner.py:60} INFO - Started process 51050 to run task
+[2024-06-07T08:44:31.732+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'csv_to_bigquery_2', 'dbt_run', 'manual__2024-06-07T08:43:48.033536+00:00', '--job-id', '1326', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_bigquery_2.py', '--cfg-path', '/tmp/tmppulnuh5w']
+[2024-06-07T08:44:31.736+0000] {standard_task_runner.py:88} INFO - Job 1326: Subtask dbt_run
+[2024-06-07T08:44:31.837+0000] {task_command.py:423} INFO - Running <TaskInstance: csv_to_bigquery_2.dbt_run manual__2024-06-07T08:43:48.033536+00:00 [running]> on host e396011bc044
+[2024-06-07T08:44:32.010+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='csv_to_bigquery_2' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2024-06-07T08:43:48.033536+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-07T08:43:48.033536+00:00'
+[2024-06-07T08:45:10.950+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-06-07T08:45:11.095+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=csv_to_bigquery_2, task_id=dbt_run, execution_date=20240607T084348, start_date=20240607T084431, end_date=20240607T084511
+[2024-06-07T08:45:11.158+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-06-07T08:45:11.213+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

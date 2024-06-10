@@ -1,0 +1,13 @@
+[2024-06-03T13:10:46.220+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alert.send_alert manual__2024-06-03T13:10:38.326257+00:00 [queued]>
+[2024-06-03T13:10:46.236+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alert.send_alert manual__2024-06-03T13:10:38.326257+00:00 [queued]>
+[2024-06-03T13:10:46.238+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-06-03T13:10:46.259+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): send_alert> on 2024-06-03 13:10:38.326257+00:00
+[2024-06-03T13:10:46.266+0000] {standard_task_runner.py:60} INFO - Started process 1469 to run task
+[2024-06-03T13:10:46.270+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'alert', 'send_alert', 'manual__2024-06-03T13:10:38.326257+00:00', '--job-id', '850', '--raw', '--subdir', 'DAGS_FOLDER/alert.py', '--cfg-path', '/tmp/tmp8tpdbkf2']
+[2024-06-03T13:10:46.273+0000] {standard_task_runner.py:88} INFO - Job 850: Subtask send_alert
+[2024-06-03T13:10:46.339+0000] {task_command.py:423} INFO - Running <TaskInstance: alert.send_alert manual__2024-06-03T13:10:38.326257+00:00 [running]> on host 0a54be82eb52
+[2024-06-03T13:10:46.454+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alert' AIRFLOW_CTX_TASK_ID='send_alert' AIRFLOW_CTX_EXECUTION_DATE='2024-06-03T13:10:38.326257+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-03T13:10:38.326257+00:00'
+[2024-06-03T13:10:46.481+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-06-03T13:10:46.505+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=alert, task_id=send_alert, execution_date=20240603T131038, start_date=20240603T131046, end_date=20240603T131046
+[2024-06-03T13:10:46.564+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-06-03T13:10:46.596+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

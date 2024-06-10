@@ -1,0 +1,19 @@
+[2024-05-20T02:48:20.432+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:47:33.035361+00:00/task_id=transform_posts permission to 509
+[2024-05-20T02:48:20.436+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:47:33.035361+00:00/task_id=transform_posts permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:47:33.035361+00:00/task_id=transform_posts'
+[2024-05-20T02:48:20.663+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:47:33.035361+00:00/task_id=transform_posts permission to 509
+[2024-05-20T02:48:20.667+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:47:33.035361+00:00/task_id=transform_posts permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:47:33.035361+00:00/task_id=transform_posts'
+[2024-05-20T02:48:20.833+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weekly_assignment.transform_posts manual__2024-05-20T02:47:33.035361+00:00 [queued]>
+[2024-05-20T02:48:20.869+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weekly_assignment.transform_posts manual__2024-05-20T02:47:33.035361+00:00 [queued]>
+[2024-05-20T02:48:20.871+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-05-20T02:48:20.926+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_posts> on 2024-05-20 02:47:33.035361+00:00
+[2024-05-20T02:48:20.997+0000] {standard_task_runner.py:60} INFO - Started process 5510 to run task
+[2024-05-20T02:48:21.078+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weekly_assignment', 'transform_posts', 'manual__2024-05-20T02:47:33.035361+00:00', '--job-id', '193', '--raw', '--subdir', 'DAGS_FOLDER/weekly_assignment.py', '--cfg-path', '/tmp/tmptng0ut7o']
+[2024-05-20T02:48:21.101+0000] {standard_task_runner.py:88} INFO - Job 193: Subtask transform_posts
+[2024-05-20T02:48:21.579+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:47:33.035361+00:00/task_id=transform_posts permission to 509
+[2024-05-20T02:48:21.580+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:47:33.035361+00:00/task_id=transform_posts permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:47:33.035361+00:00/task_id=transform_posts'
+[2024-05-20T02:48:21.587+0000] {task_command.py:423} INFO - Running <TaskInstance: weekly_assignment.transform_posts manual__2024-05-20T02:47:33.035361+00:00 [running]> on host 3e756f125b35
+[2024-05-20T02:48:22.059+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weekly_assignment' AIRFLOW_CTX_TASK_ID='transform_posts' AIRFLOW_CTX_EXECUTION_DATE='2024-05-20T02:47:33.035361+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-20T02:47:33.035361+00:00'
+[2024-05-20T02:48:22.142+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-05-20T02:48:22.171+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=weekly_assignment, task_id=transform_posts, execution_date=20240520T024733, start_date=20240520T024820, end_date=20240520T024822
+[2024-05-20T02:48:22.252+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-05-20T02:48:22.349+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

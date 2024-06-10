@@ -1,0 +1,113 @@
+[0m13:14:30.331766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A2CC04610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A2F636F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A2F636DA0>]}
+
+
+============================== 13:14:30.342772 | 01eb5afb-ebc3-4f2b-990e-b8b7c5e862bb ==============================
+[0m13:14:30.342772 [info ] [MainThread]: Running with dbt=1.7.13
+[0m13:14:30.342772 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\asus\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init network', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:14:30.342772 [debug] [MainThread]: Starter project path: C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\include\starter_project
+[0m13:14:30.437294 [info ] [MainThread]: 
+Your new dbt project "network" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:14:30.437294 [info ] [MainThread]: Setting up your profile.
+[0m13:17:00.848675 [info ] [MainThread]: Profile network written to C:\Users\asus\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:17:00.864944 [debug] [MainThread]: Command `dbt init` succeeded at 13:17:00.864944 after 150.62 seconds
+[0m13:17:00.864944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A2CC04610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A2F636D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A2F636F80>]}
+[0m13:17:00.864944 [debug] [MainThread]: Flushing usage events
+[0m13:17:24.407193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F070AC73D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0734F7010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0734F6E30>]}
+
+
+============================== 13:17:24.427345 | 88c3c781-10cf-43a8-a598-539fdb2a4894 ==============================
+[0m13:17:24.427345 [info ] [MainThread]: Running with dbt=1.7.13
+[0m13:17:24.428922 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\asus\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:17:24.429978 [info ] [MainThread]: dbt version: 1.7.13
+[0m13:17:24.431249 [info ] [MainThread]: python version: 3.10.9
+[0m13:17:24.431778 [info ] [MainThread]: python path: C:\Users\asus\AppData\Local\Programs\Python\Python310\python.exe
+[0m13:17:24.432839 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m13:17:27.153251 [info ] [MainThread]: Using profiles dir at C:\Users\asus\.dbt
+[0m13:17:27.153251 [info ] [MainThread]: Using profiles.yml file at C:\Users\asus\.dbt\profiles.yml
+[0m13:17:27.169069 [info ] [MainThread]: Using dbt_project.yml file at C:\airflow\dags\dbt_project.yml
+[0m13:17:27.169586 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m13:17:27.169586 [debug] [MainThread]: Command `dbt debug` failed at 13:17:27.169586 after 2.85 seconds
+[0m13:17:27.169586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F070AC73D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00D019750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0734F6EF0>]}
+[0m13:17:27.169586 [debug] [MainThread]: Flushing usage events
+[0m13:17:40.952684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D9259F6D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D928436FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D928436DD0>]}
+
+
+============================== 13:17:40.952684 | 4f0f6ef7-a6c4-44bc-9f73-d8a68bbad493 ==============================
+[0m13:17:40.952684 [info ] [MainThread]: Running with dbt=1.7.13
+[0m13:17:40.952684 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\asus\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:17:40.952684 [info ] [MainThread]: dbt version: 1.7.13
+[0m13:17:40.952684 [info ] [MainThread]: python version: 3.10.9
+[0m13:17:40.952684 [info ] [MainThread]: python path: C:\Users\asus\AppData\Local\Programs\Python\Python310\python.exe
+[0m13:17:40.952684 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m13:17:42.966614 [info ] [MainThread]: Using profiles dir at C:\Users\asus\.dbt
+[0m13:17:42.967731 [info ] [MainThread]: Using profiles.yml file at C:\Users\asus\.dbt\profiles.yml
+[0m13:17:42.969963 [info ] [MainThread]: Using dbt_project.yml file at C:\airflow\dags\dbt_project.yml
+[0m13:17:42.970985 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m13:17:42.972982 [debug] [MainThread]: Command `dbt debug` failed at 13:17:42.972982 after 2.09 seconds
+[0m13:17:42.973985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D9259F6D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D927C72E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D928436E90>]}
+[0m13:17:42.973985 [debug] [MainThread]: Flushing usage events
+[0m13:23:27.445238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279570D6D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027959B06FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027959B06DD0>]}
+
+
+============================== 13:23:27.445405 | 5a8174d0-3b11-4877-9cf4-76c8d193b094 ==============================
+[0m13:23:27.445405 [info ] [MainThread]: Running with dbt=1.7.13
+[0m13:23:27.445405 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\asus\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init network', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:23:27.445405 [debug] [MainThread]: Starter project path: C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\include\starter_project
+[0m13:23:27.488548 [info ] [MainThread]: 
+Your new dbt project "network" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:23:27.488548 [info ] [MainThread]: Setting up your profile.
+[0m13:27:12.577733 [info ] [MainThread]: Profile network written to C:\Users\asus\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:27:12.580710 [debug] [MainThread]: Command `dbt init` succeeded at 13:27:12.579692 after 225.23 seconds
+[0m13:27:12.581447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279570D6D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027959B070D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027959B06FB0>]}
+[0m13:27:12.582480 [debug] [MainThread]: Flushing usage events
+[0m13:27:27.773233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D31916D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D34346FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D34346DD0>]}
+
+
+============================== 13:27:27.780013 | 0d608009-a714-49e2-8a01-8f96c30068d9 ==============================
+[0m13:27:27.780013 [info ] [MainThread]: Running with dbt=1.7.13
+[0m13:27:27.780013 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\asus\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:27:27.787176 [info ] [MainThread]: dbt version: 1.7.13
+[0m13:27:27.787239 [info ] [MainThread]: python version: 3.10.9
+[0m13:27:27.787239 [info ] [MainThread]: python path: C:\Users\asus\AppData\Local\Programs\Python\Python310\python.exe
+[0m13:27:27.787239 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m13:27:30.404438 [info ] [MainThread]: Using profiles dir at C:\Users\asus\.dbt
+[0m13:27:30.405449 [info ] [MainThread]: Using profiles.yml file at C:\Users\asus\.dbt\profiles.yml
+[0m13:27:30.406449 [info ] [MainThread]: Using dbt_project.yml file at C:\airflow\dags\dbt_project.yml
+[0m13:27:30.407450 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m13:27:30.409928 [debug] [MainThread]: Command `dbt debug` failed at 13:27:30.409843 after 2.71 seconds
+[0m13:27:30.411044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D31916D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D3079F1F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D33B9EE90>]}
+[0m13:27:30.411344 [debug] [MainThread]: Flushing usage events

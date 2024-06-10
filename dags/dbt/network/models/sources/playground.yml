@@ -1,0 +1,56 @@
+version: 2
+
+sources:
+  - name: playground
+    tables:
+      - name: students
+      - name: network_data
+        columns:
+          - name: StartTime
+            tests:
+              - not_null
+          - name: Dur
+            tests:
+              - not_null
+          - name: Proto
+            tests:
+              - not_null
+          - name: SrcAddr 
+            tests:
+              - not_null
+          - name: Sport
+            tests:
+              - not_null
+          - name: Dir
+            tests:
+              - not_null
+          - name: DstAddr
+            tests:
+              - not_null
+          - name: Dport
+            tests:
+              - not_null
+          - name: State
+            tests:
+              - not_null
+          - name: sTos
+            tests:
+              - not_null
+          - name: dTos
+            tests:
+              - not_null
+          - name: TotPkts
+            tests:
+              - not_null
+          - name: TotBytes
+            tests:
+              - not_null
+          - name: SrcBytes
+            tests:
+              - not_null
+          - name: Label
+            tests:
+              - not_null
+
+      
+

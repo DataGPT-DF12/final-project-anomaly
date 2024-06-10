@@ -1,0 +1,166 @@
+[2024-06-07T08:53:37.748+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: csv_to_bigquery_2.check_file_exists manual__2024-06-07T08:53:30.159695+00:00 [queued]>
+[2024-06-07T08:53:37.760+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: csv_to_bigquery_2.check_file_exists manual__2024-06-07T08:53:30.159695+00:00 [queued]>
+[2024-06-07T08:53:37.762+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-06-07T08:53:37.781+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): check_file_exists> on 2024-06-07 08:53:30.159695+00:00
+[2024-06-07T08:53:37.791+0000] {standard_task_runner.py:60} INFO - Started process 53828 to run task
+[2024-06-07T08:53:37.793+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'csv_to_bigquery_2', 'check_file_exists', 'manual__2024-06-07T08:53:30.159695+00:00', '--job-id', '1329', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_bigquery_2.py', '--cfg-path', '/tmp/tmpvgygqk_c']
+[2024-06-07T08:53:37.796+0000] {standard_task_runner.py:88} INFO - Job 1329: Subtask check_file_exists
+[2024-06-07T08:53:37.853+0000] {task_command.py:423} INFO - Running <TaskInstance: csv_to_bigquery_2.check_file_exists manual__2024-06-07T08:53:30.159695+00:00 [running]> on host e396011bc044
+[2024-06-07T08:53:37.974+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='csv_to_bigquery_2' AIRFLOW_CTX_TASK_ID='check_file_exists' AIRFLOW_CTX_EXECUTION_DATE='2024-06-07T08:53:30.159695+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-07T08:53:30.159695+00:00'
+[2024-06-07T08:53:37.998+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-06-07T08:53:38.028+0000] {base.py:83} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2024-06-07T08:53:38.030+0000] {gcs.py:249} INFO - Getting list of the files. Bucket: testing_bucket_df12; Delimiter: None; Prefix(es): network_data/test_dataset.csv
+[2024-06-07T08:53:46.204+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0002261f0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:53:50.209+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa000226370>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:53:50.250+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0002264f0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:53:50.533+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa000226ca0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:53:50.538+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa000226e50>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:53:50.542+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00023c070>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:53:50.639+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00023c910>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:53:50.645+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00028c880>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:53:50.651+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00028ce50>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:53:53.953+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa000226250>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:53:53.959+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00023caf0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:53:53.965+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00023cc70>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:02.288+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00024c550>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:02.302+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00024c6d0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:02.309+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00024c8b0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:15.886+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00023cb80>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:15.891+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00023ce50>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:15.896+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00023ccd0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:28.363+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001da190>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:28.370+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001da310>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:28.377+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001da4f0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:51.791+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001dad90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')': /token
+[2024-06-07T08:54:55.795+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001daf10>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:55.827+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001e9130>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:59.549+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00023cdf0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:59.554+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00023c5b0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:54:59.559+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa00023ce80>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:55:12.688+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001da5e0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:55:12.695+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001da820>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:55:12.701+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001da5b0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /token
+[2024-06-07T08:55:12.708+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1058, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fa0001da190>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 827, in urlopen
+    return self.urlopen(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 827, in urlopen
+    return self.urlopen(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 827, in urlopen
+    return self.urlopen(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001da190>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/transport/requests.py", line 186, in __call__
+    response = self.session.request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001da190>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 207, in retry_target
+    result = target()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/_http/__init__.py", line 482, in api_request
+    response = self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/_http/__init__.py", line 341, in _make_request
+    return self._do_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/_http/__init__.py", line 379, in _do_request
+    return self.http.request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/transport/requests.py", line 537, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/credentials.py", line 228, in before_request
+    self._blocking_refresh(request)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/credentials.py", line 191, in _blocking_refresh
+    self.refresh(request)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/oauth2/service_account.py", line 441, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/oauth2/_client.py", line 308, in jwt_grant
+    response_data = _token_endpoint_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/oauth2/_client.py", line 268, in _token_endpoint_request
+    response_status_ok, response_data, retryable_error = _token_endpoint_request_no_throw(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/oauth2/_client.py", line 215, in _token_endpoint_request_no_throw
+    request_succeeded, response_data, retryable_error = _perform_request()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/oauth2/_client.py", line 191, in _perform_request
+    response = request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/transport/requests.py", line 192, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001da190>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/csv_to_bigquery_2.py", line 49, in check_file_exists
+    files = list_files.execute(context=kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/operators/gcs.py", line 262, in execute
+    return hook.list(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 763, in list
+    self._list(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 825, in _list
+    blob_names = [blob.name for blob in blobs]
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 825, in <listcomp>
+    blob_names = [blob.name for blob in blobs]
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 208, in _items_iter
+    for page in self._page_iter(increment=False):
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 244, in _page_iter
+    page = self._next_page()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 373, in _next_page
+    response = self._get_next_page_response()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 432, in _get_next_page_response
+    return self.api_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/storage/_http.py", line 72, in api_request
+    return call()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 372, in retry_wrapped_func
+    return retry_target(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 226, in retry_target
+    raise exceptions.RetryError(
+google.api_core.exceptions.RetryError: Deadline of 120.0s exceeded while calling target function, last exception: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001da190>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2024-06-07T08:55:12.742+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=csv_to_bigquery_2, task_id=check_file_exists, execution_date=20240607T085330, start_date=20240607T085337, end_date=20240607T085512
+[2024-06-07T08:55:12.772+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1329 for task check_file_exists (Deadline of 120.0s exceeded while calling target function, last exception: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa0001da190>: Failed to establish a new connection: [Errno -2] Name or service not known')); 53828)
+[2024-06-07T08:55:12.798+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-06-07T08:55:12.832+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

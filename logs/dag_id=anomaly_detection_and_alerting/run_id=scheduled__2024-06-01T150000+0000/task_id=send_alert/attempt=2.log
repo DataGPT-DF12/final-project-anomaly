@@ -1,0 +1,24 @@
+[2024-06-01T16:05:09.719+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: anomaly_detection_and_alerting.send_alert scheduled__2024-06-01T15:00:00+00:00 [queued]>
+[2024-06-01T16:05:09.796+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: anomaly_detection_and_alerting.send_alert scheduled__2024-06-01T15:00:00+00:00 [queued]>
+[2024-06-01T16:05:09.809+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2024-06-01T16:05:09.921+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): send_alert> on 2024-06-01 15:00:00+00:00
+[2024-06-01T16:05:09.961+0000] {standard_task_runner.py:60} INFO - Started process 31275 to run task
+[2024-06-01T16:05:09.977+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'anomaly_detection_and_alerting', 'send_alert', 'scheduled__2024-06-01T15:00:00+00:00', '--job-id', '584', '--raw', '--subdir', 'DAGS_FOLDER/alert.py', '--cfg-path', '/tmp/tmp1dbt8mqs']
+[2024-06-01T16:05:09.988+0000] {standard_task_runner.py:88} INFO - Job 584: Subtask send_alert
+[2024-06-01T16:05:10.237+0000] {task_command.py:423} INFO - Running <TaskInstance: anomaly_detection_and_alerting.send_alert scheduled__2024-06-01T15:00:00+00:00 [running]> on host 6204b7e2d2f9
+[2024-06-01T16:05:10.603+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='anomaly_detection_and_alerting' AIRFLOW_CTX_TASK_ID='send_alert' AIRFLOW_CTX_EXECUTION_DATE='2024-06-01T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-01T15:00:00+00:00'
+[2024-06-01T16:05:10.639+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/alert.py", line 53, in send_alert
+    html_content=f"<p>Anomalies detected:</p><pre>{anomaly_details}</pre>",
+NameError: name 'anomaly_details' is not defined
+[2024-06-01T16:05:10.674+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=anomaly_detection_and_alerting, task_id=send_alert, execution_date=20240601T150000, start_date=20240601T160509, end_date=20240601T160510
+[2024-06-01T16:05:10.710+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 584 for task send_alert (name 'anomaly_details' is not defined; 31275)
+[2024-06-01T16:05:10.736+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-06-01T16:05:10.788+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

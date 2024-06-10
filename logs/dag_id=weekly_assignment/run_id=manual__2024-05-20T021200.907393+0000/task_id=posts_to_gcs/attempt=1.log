@@ -1,0 +1,34 @@
+[2024-05-20T02:12:22.056+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:12:00.907393+00:00/task_id=posts_to_gcs permission to 509
+[2024-05-20T02:12:22.057+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:12:00.907393+00:00/task_id=posts_to_gcs permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:12:00.907393+00:00/task_id=posts_to_gcs'
+[2024-05-20T02:12:22.117+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:12:00.907393+00:00/task_id=posts_to_gcs permission to 509
+[2024-05-20T02:12:22.119+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:12:00.907393+00:00/task_id=posts_to_gcs permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:12:00.907393+00:00/task_id=posts_to_gcs'
+[2024-05-20T02:12:22.153+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weekly_assignment.posts_to_gcs manual__2024-05-20T02:12:00.907393+00:00 [queued]>
+[2024-05-20T02:12:22.168+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weekly_assignment.posts_to_gcs manual__2024-05-20T02:12:00.907393+00:00 [queued]>
+[2024-05-20T02:12:22.170+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-05-20T02:12:22.186+0000] {taskinstance.py:2191} INFO - Executing <Task(LocalFilesystemToGCSOperator): posts_to_gcs> on 2024-05-20 02:12:00.907393+00:00
+[2024-05-20T02:12:22.196+0000] {standard_task_runner.py:60} INFO - Started process 1874 to run task
+[2024-05-20T02:12:22.200+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weekly_assignment', 'posts_to_gcs', 'manual__2024-05-20T02:12:00.907393+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/weekly_assignment.py', '--cfg-path', '/tmp/tmp6yuuf19o']
+[2024-05-20T02:12:22.203+0000] {standard_task_runner.py:88} INFO - Job 79: Subtask posts_to_gcs
+[2024-05-20T02:12:22.260+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:12:00.907393+00:00/task_id=posts_to_gcs permission to 509
+[2024-05-20T02:12:22.261+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:12:00.907393+00:00/task_id=posts_to_gcs permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:12:00.907393+00:00/task_id=posts_to_gcs'
+[2024-05-20T02:12:22.264+0000] {task_command.py:423} INFO - Running <TaskInstance: weekly_assignment.posts_to_gcs manual__2024-05-20T02:12:00.907393+00:00 [running]> on host 3e756f125b35
+[2024-05-20T02:12:22.363+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weekly_assignment' AIRFLOW_CTX_TASK_ID='posts_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2024-05-20T02:12:00.907393+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-20T02:12:00.907393+00:00'
+[2024-05-20T02:12:22.388+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/local_to_gcs.py", line 90, in execute
+    hook = GCSHook(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 157, in __init__
+    super().__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/common/hooks/base_google.py", line 242, in __init__
+    self.extras: dict = self.get_connection(self.gcp_conn_id).extra_dejson
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 82, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 479, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `google_cloud_default` isn't defined
+[2024-05-20T02:12:22.393+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=weekly_assignment, task_id=posts_to_gcs, execution_date=20240520T021200, start_date=20240520T021222, end_date=20240520T021222
+[2024-05-20T02:12:22.409+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 79 for task posts_to_gcs (The conn_id `google_cloud_default` isn't defined; 1874)
+[2024-05-20T02:12:22.454+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-05-20T02:12:22.474+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

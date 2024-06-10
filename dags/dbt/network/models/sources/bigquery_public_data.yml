@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: austin_bikeshare
+    database: bigquery-public-data  
+    tables:
+      - name: bikeshare_stations
+      - name: bikeshare_trips
+        freshness:
+          warn_after: {count: 30, period: day}
+          error_after: {count: 180, period: day}
+        loaded_at_field: start_time
+

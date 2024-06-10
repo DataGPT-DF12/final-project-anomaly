@@ -1,0 +1,21 @@
+[2024-05-20T02:23:45.352+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=posts_to_gcs permission to 509
+[2024-05-20T02:23:45.353+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=posts_to_gcs permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=posts_to_gcs'
+[2024-05-20T02:23:45.394+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=posts_to_gcs permission to 509
+[2024-05-20T02:23:45.395+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=posts_to_gcs permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=posts_to_gcs'
+[2024-05-20T02:23:45.432+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weekly_assignment.posts_to_gcs manual__2024-05-20T02:23:22.481688+00:00 [queued]>
+[2024-05-20T02:23:45.449+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weekly_assignment.posts_to_gcs manual__2024-05-20T02:23:22.481688+00:00 [queued]>
+[2024-05-20T02:23:45.450+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-05-20T02:23:45.472+0000] {taskinstance.py:2191} INFO - Executing <Task(LocalFilesystemToGCSOperator): posts_to_gcs> on 2024-05-20 02:23:22.481688+00:00
+[2024-05-20T02:23:45.486+0000] {standard_task_runner.py:60} INFO - Started process 3032 to run task
+[2024-05-20T02:23:45.491+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weekly_assignment', 'posts_to_gcs', 'manual__2024-05-20T02:23:22.481688+00:00', '--job-id', '115', '--raw', '--subdir', 'DAGS_FOLDER/weekly_assignment.py', '--cfg-path', '/tmp/tmplkh7ruwy']
+[2024-05-20T02:23:45.496+0000] {standard_task_runner.py:88} INFO - Job 115: Subtask posts_to_gcs
+[2024-05-20T02:23:45.578+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=posts_to_gcs permission to 509
+[2024-05-20T02:23:45.579+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=posts_to_gcs permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=posts_to_gcs'
+[2024-05-20T02:23:45.583+0000] {task_command.py:423} INFO - Running <TaskInstance: weekly_assignment.posts_to_gcs manual__2024-05-20T02:23:22.481688+00:00 [running]> on host 3e756f125b35
+[2024-05-20T02:23:45.706+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weekly_assignment' AIRFLOW_CTX_TASK_ID='posts_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2024-05-20T02:23:22.481688+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-20T02:23:22.481688+00:00'
+[2024-05-20T02:23:45.729+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-05-20T02:23:45.735+0000] {base.py:83} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2024-05-20T02:23:48.163+0000] {gcs.py:555} INFO - File /opt/***/dags/playground/target/weekly/posts.csv uploaded to posts/posts.csv in weekly_6 bucket
+[2024-05-20T02:23:48.175+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=weekly_assignment, task_id=posts_to_gcs, execution_date=20240520T022322, start_date=20240520T022345, end_date=20240520T022348
+[2024-05-20T02:23:48.200+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-05-20T02:23:48.220+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

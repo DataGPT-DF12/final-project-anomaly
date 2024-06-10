@@ -1,0 +1,14 @@
+[2024-05-30T13:35:44.554+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_run.dbt_run manual__2024-05-30T13:35:37.421529+00:00 [queued]>
+[2024-05-30T13:35:44.570+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_run.dbt_run manual__2024-05-30T13:35:37.421529+00:00 [queued]>
+[2024-05-30T13:35:44.571+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-05-30T13:35:44.594+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): dbt_run> on 2024-05-30 13:35:37.421529+00:00
+[2024-05-30T13:35:44.622+0000] {standard_task_runner.py:60} INFO - Started process 33012 to run task
+[2024-05-30T13:35:44.633+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dbt_run', 'dbt_run', 'manual__2024-05-30T13:35:37.421529+00:00', '--job-id', '431', '--raw', '--subdir', 'DAGS_FOLDER/dbt_run.py', '--cfg-path', '/tmp/tmpfeh3x783']
+[2024-05-30T13:35:44.643+0000] {standard_task_runner.py:88} INFO - Job 431: Subtask dbt_run
+[2024-05-30T13:35:44.776+0000] {task_command.py:423} INFO - Running <TaskInstance: dbt_run.dbt_run manual__2024-05-30T13:35:37.421529+00:00 [running]> on host 31479678ec93
+[2024-05-30T13:35:44.911+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_run' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2024-05-30T13:35:37.421529+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-30T13:35:37.421529+00:00'
+[2024-05-30T13:36:09.112+0000] {logging_mixin.py:188} INFO - dbt command failed with error: Command '['dbt', 'run']' returned non-zero exit status 1.
+[2024-05-30T13:36:09.139+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-05-30T13:36:09.312+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dbt_run, task_id=dbt_run, execution_date=20240530T133537, start_date=20240530T133544, end_date=20240530T133609
+[2024-05-30T13:36:09.426+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-05-30T13:36:09.512+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

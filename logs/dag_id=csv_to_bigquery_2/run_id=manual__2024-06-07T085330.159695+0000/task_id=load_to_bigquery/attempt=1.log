@@ -1,0 +1,29 @@
+[2024-06-07T09:00:23.245+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: csv_to_bigquery_2.load_to_bigquery manual__2024-06-07T08:53:30.159695+00:00 [queued]>
+[2024-06-07T09:00:23.262+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: csv_to_bigquery_2.load_to_bigquery manual__2024-06-07T08:53:30.159695+00:00 [queued]>
+[2024-06-07T09:00:23.263+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-06-07T09:00:23.288+0000] {taskinstance.py:2191} INFO - Executing <Task(GCSToBigQueryOperator): load_to_bigquery> on 2024-06-07 08:53:30.159695+00:00
+[2024-06-07T09:00:23.311+0000] {standard_task_runner.py:60} INFO - Started process 55911 to run task
+[2024-06-07T09:00:23.333+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'csv_to_bigquery_2', 'load_to_bigquery', 'manual__2024-06-07T08:53:30.159695+00:00', '--job-id', '1333', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_bigquery_2.py', '--cfg-path', '/tmp/tmpb0ezut05']
+[2024-06-07T09:00:23.350+0000] {standard_task_runner.py:88} INFO - Job 1333: Subtask load_to_bigquery
+[2024-06-07T09:00:23.442+0000] {task_command.py:423} INFO - Running <TaskInstance: csv_to_bigquery_2.load_to_bigquery manual__2024-06-07T08:53:30.159695+00:00 [running]> on host e396011bc044
+[2024-06-07T09:00:23.546+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='csv_to_bigquery_2' AIRFLOW_CTX_TASK_ID='load_to_bigquery' AIRFLOW_CTX_EXECUTION_DATE='2024-06-07T08:53:30.159695+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-07T08:53:30.159695+00:00'
+[2024-06-07T09:00:23.558+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-06-07T09:00:23.564+0000] {base.py:83} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2024-06-07T09:00:23.565+0000] {gcs_to_bigquery.py:379} INFO - Using existing BigQuery table for storing data...
+[2024-06-07T09:00:23.605+0000] {gcs_to_bigquery.py:383} INFO - Executing: {'load': {'autodetect': True, 'createDisposition': 'CREATE_IF_NEEDED', 'destinationTable': {'projectId': 'stately-node-363801', 'datasetId': 'network', 'tableId': 'network_raw_bronze'}, 'sourceFormat': 'CSV', 'sourceUris': ['gs://testing_bucket_df12/network_data/test_dataset.csv'], 'writeDisposition': 'WRITE_TRUNCATE', 'ignoreUnknownValues': False, 'skipLeadingRows': 1, 'fieldDelimiter': ',', 'quote': None, 'allowQuotedNewlines': False, 'encoding': 'UTF-8'}}
+[2024-06-07T09:00:23.607+0000] {bigquery.py:1596} INFO - Inserting job ***_csv_to_bigquery_2_load_to_bigquery_2024_06_07T08_53_30_159695_00_00_4afc7f084088c02191e261c8aa694d92
+[2024-06-07T09:00:26.443+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/gcs_to_bigquery.py", line 442, in execute
+    job.result(timeout=self.result_timeout, retry=self.result_retry)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 971, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: URI gs://testing_bucket_df12/network_data/test_dataset.csv; reason: notFound, message: Not found: URI gs://testing_bucket_df12/network_data/test_dataset.csv
+[2024-06-07T09:00:26.456+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=csv_to_bigquery_2, task_id=load_to_bigquery, execution_date=20240607T085330, start_date=20240607T090023, end_date=20240607T090026
+[2024-06-07T09:00:26.474+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1333 for task load_to_bigquery (404 Not found: URI gs://testing_bucket_df12/network_data/test_dataset.csv; reason: notFound, message: Not found: URI gs://testing_bucket_df12/network_data/test_dataset.csv; 55911)
+[2024-06-07T09:00:26.486+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-06-07T09:00:26.516+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

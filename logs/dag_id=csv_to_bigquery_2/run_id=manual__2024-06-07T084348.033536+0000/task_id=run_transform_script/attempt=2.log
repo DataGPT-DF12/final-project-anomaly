@@ -1,0 +1,95 @@
+[2024-06-07T08:50:24.682+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: csv_to_bigquery_2.run_transform_script manual__2024-06-07T08:43:48.033536+00:00 [queued]>
+[2024-06-07T08:50:24.697+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: csv_to_bigquery_2.run_transform_script manual__2024-06-07T08:43:48.033536+00:00 [queued]>
+[2024-06-07T08:50:24.698+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2024-06-07T08:50:24.715+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): run_transform_script> on 2024-06-07 08:43:48.033536+00:00
+[2024-06-07T08:50:24.725+0000] {standard_task_runner.py:60} INFO - Started process 52845 to run task
+[2024-06-07T08:50:24.731+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'csv_to_bigquery_2', 'run_transform_script', 'manual__2024-06-07T08:43:48.033536+00:00', '--job-id', '1328', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_bigquery_2.py', '--cfg-path', '/tmp/tmpaqhu35lb']
+[2024-06-07T08:50:24.734+0000] {standard_task_runner.py:88} INFO - Job 1328: Subtask run_transform_script
+[2024-06-07T08:50:24.806+0000] {task_command.py:423} INFO - Running <TaskInstance: csv_to_bigquery_2.run_transform_script manual__2024-06-07T08:43:48.033536+00:00 [running]> on host e396011bc044
+[2024-06-07T08:50:24.934+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='csv_to_bigquery_2' AIRFLOW_CTX_TASK_ID='run_transform_script' AIRFLOW_CTX_EXECUTION_DATE='2024-06-07T08:43:48.033536+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-07T08:43:48.033536+00:00'
+[2024-06-07T08:50:30.966+0000] {logging_mixin.py:188} INFO - Traceback (most recent call last):
+  File "/opt/***/dags/network_model/dataprep.py", line 103, in <module>
+    main()
+  File "/opt/***/dags/network_model/dataprep.py", line 80, in main
+    data = fetch_data_from_bigquery(query)
+  File "/opt/***/dags/network_model/dataprep.py", line 21, in fetch_data_from_bigquery
+    result = query_job.result()
+  File "/home/***/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1595, in result
+    do_get_result()
+  File "/home/***/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 372, in retry_wrapped_func
+    return retry_target(
+  File "/home/***/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 207, in retry_target
+    result = target()
+  File "/home/***/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1584, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/home/***/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 971, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/***/.local/lib/python3.8/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Table stately-node-363801:network.cleaned_data_silver was not found in location US; reason: notFound, message: Not found: Table stately-node-363801:network.cleaned_data_silver was not found in location US
+
+Location: US
+Job ID: 37302987-4afb-4684-8dbd-efdbb6b4bd61
+[2024-06-07T08:50:30.968+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/csv_to_bigquery_2.py", line 87, in run_transform_script
+    raise Exception("Script failed: " + result.stderr)
+Exception: Script failed: Traceback (most recent call last):
+  File "/opt/***/dags/network_model/dataprep.py", line 103, in <module>
+    main()
+  File "/opt/***/dags/network_model/dataprep.py", line 80, in main
+    data = fetch_data_from_bigquery(query)
+  File "/opt/***/dags/network_model/dataprep.py", line 21, in fetch_data_from_bigquery
+    result = query_job.result()
+  File "/home/***/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1595, in result
+    do_get_result()
+  File "/home/***/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 372, in retry_wrapped_func
+    return retry_target(
+  File "/home/***/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 207, in retry_target
+    result = target()
+  File "/home/***/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1584, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/home/***/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 971, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/***/.local/lib/python3.8/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Table stately-node-363801:network.cleaned_data_silver was not found in location US; reason: notFound, message: Not found: Table stately-node-363801:network.cleaned_data_silver was not found in location US
+
+Location: US
+Job ID: 37302987-4afb-4684-8dbd-efdbb6b4bd61
+
+
+[2024-06-07T08:50:31.004+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=csv_to_bigquery_2, task_id=run_transform_script, execution_date=20240607T084348, start_date=20240607T085024, end_date=20240607T085031
+[2024-06-07T08:50:31.078+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1328 for task run_transform_script (Script failed: Traceback (most recent call last):
+  File "/opt/***/dags/network_model/dataprep.py", line 103, in <module>
+    main()
+  File "/opt/***/dags/network_model/dataprep.py", line 80, in main
+    data = fetch_data_from_bigquery(query)
+  File "/opt/***/dags/network_model/dataprep.py", line 21, in fetch_data_from_bigquery
+    result = query_job.result()
+  File "/home/***/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1595, in result
+    do_get_result()
+  File "/home/***/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 372, in retry_wrapped_func
+    return retry_target(
+  File "/home/***/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 207, in retry_target
+    result = target()
+  File "/home/***/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1584, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/home/***/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 971, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/***/.local/lib/python3.8/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Table stately-node-363801:network.cleaned_data_silver was not found in location US; reason: notFound, message: Not found: Table stately-node-363801:network.cleaned_data_silver was not found in location US
+
+Location: US
+Job ID: 37302987-4afb-4684-8dbd-efdbb6b4bd61
+
+; 52845)
+[2024-06-07T08:50:31.133+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-06-07T08:50:31.222+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

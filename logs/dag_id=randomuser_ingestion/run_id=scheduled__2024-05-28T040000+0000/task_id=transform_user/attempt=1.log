@@ -1,0 +1,13 @@
+[2024-05-28T05:00:12.024+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: randomuser_ingestion.transform_user scheduled__2024-05-28T04:00:00+00:00 [queued]>
+[2024-05-28T05:00:12.046+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: randomuser_ingestion.transform_user scheduled__2024-05-28T04:00:00+00:00 [queued]>
+[2024-05-28T05:00:12.048+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-05-28T05:00:12.074+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_user> on 2024-05-28 04:00:00+00:00
+[2024-05-28T05:00:12.082+0000] {standard_task_runner.py:60} INFO - Started process 4610 to run task
+[2024-05-28T05:00:12.112+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'randomuser_ingestion', 'transform_user', 'scheduled__2024-05-28T04:00:00+00:00', '--job-id', '282', '--raw', '--subdir', 'DAGS_FOLDER/randomuser_ingestion.py', '--cfg-path', '/tmp/tmpbhr1ntx4']
+[2024-05-28T05:00:12.114+0000] {standard_task_runner.py:88} INFO - Job 282: Subtask transform_user
+[2024-05-28T05:00:12.191+0000] {task_command.py:423} INFO - Running <TaskInstance: randomuser_ingestion.transform_user scheduled__2024-05-28T04:00:00+00:00 [running]> on host 57cf5c93792a
+[2024-05-28T05:00:12.349+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='randomuser_ingestion' AIRFLOW_CTX_TASK_ID='transform_user' AIRFLOW_CTX_EXECUTION_DATE='2024-05-28T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-28T04:00:00+00:00'
+[2024-05-28T05:00:12.378+0000] {python.py:201} INFO - Done. Returned value was: {'first_name': 'Janis', 'last_name': 'Leroux', 'gender': 'male', 'age': 23, 'country': 'Switzerland', 'email': 'janis.leroux@example.com'}
+[2024-05-28T05:00:12.424+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=randomuser_ingestion, task_id=transform_user, execution_date=20240528T040000, start_date=20240528T050012, end_date=20240528T050012
+[2024-05-28T05:00:12.462+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-05-28T05:00:12.490+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

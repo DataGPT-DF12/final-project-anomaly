@@ -1,0 +1,7 @@
+[2024-06-07T03:22:13.836+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alert_combine.detect_and_alert scheduled__2024-06-05T16:00:00+00:00 [queued]>
+[2024-06-07T03:22:13.951+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alert_combine.detect_and_alert scheduled__2024-06-05T16:00:00+00:00 [queued]>
+[2024-06-07T03:22:13.961+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-06-07T03:22:14.525+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): detect_and_alert> on 2024-06-05 16:00:00+00:00
+[2024-06-07T03:22:14.639+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'alert_combine', 'detect_and_alert', 'scheduled__2024-06-05T16:00:00+00:00', '--job-id', '1234', '--raw', '--subdir', 'DAGS_FOLDER/alert_combine.py', '--cfg-path', '/tmp/tmpyf2zs72j']
+[2024-06-07T03:22:14.649+0000] {standard_task_runner.py:88} INFO - Job 1234: Subtask detect_and_alert
+[2024-06-07T03:22:14.594+0000] {standard_task_runner.py:60} INFO - Started process 393 to run task

@@ -1,0 +1,14 @@
+[2024-06-07T09:25:16.485+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: csv_to_bigquery_2.run_transform_script manual__2024-06-07T09:19:19.769048+00:00 [queued]>
+[2024-06-07T09:25:16.499+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: csv_to_bigquery_2.run_transform_script manual__2024-06-07T09:19:19.769048+00:00 [queued]>
+[2024-06-07T09:25:16.500+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2024-06-07T09:25:16.521+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): run_transform_script> on 2024-06-07 09:19:19.769048+00:00
+[2024-06-07T09:25:16.534+0000] {standard_task_runner.py:60} INFO - Started process 63421 to run task
+[2024-06-07T09:25:16.540+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'csv_to_bigquery_2', 'run_transform_script', 'manual__2024-06-07T09:19:19.769048+00:00', '--job-id', '1345', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_bigquery_2.py', '--cfg-path', '/tmp/tmpitnlvsl_']
+[2024-06-07T09:25:16.543+0000] {standard_task_runner.py:88} INFO - Job 1345: Subtask run_transform_script
+[2024-06-07T09:25:16.618+0000] {task_command.py:423} INFO - Running <TaskInstance: csv_to_bigquery_2.run_transform_script manual__2024-06-07T09:19:19.769048+00:00 [running]> on host e396011bc044
+[2024-06-07T09:25:16.783+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='csv_to_bigquery_2' AIRFLOW_CTX_TASK_ID='run_transform_script' AIRFLOW_CTX_EXECUTION_DATE='2024-06-07T09:19:19.769048+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-07T09:19:19.769048+00:00'
+[2024-06-07T09:27:35.897+0000] {logging_mixin.py:188} INFO - Loaded 966562 rows into network:transformed_silver.
+[2024-06-07T09:27:35.970+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-06-07T09:27:36.410+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=csv_to_bigquery_2, task_id=run_transform_script, execution_date=20240607T091919, start_date=20240607T092516, end_date=20240607T092736
+[2024-06-07T09:27:36.611+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-06-07T09:27:36.834+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,15 @@
+[2024-05-28T08:37:00.071+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: csv_to_bigquery.users_to_gcs manual__2024-05-28T08:36:54.613765+00:00 [queued]>
+[2024-05-28T08:37:00.086+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: csv_to_bigquery.users_to_gcs manual__2024-05-28T08:36:54.613765+00:00 [queued]>
+[2024-05-28T08:37:00.087+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-05-28T08:37:00.108+0000] {taskinstance.py:2191} INFO - Executing <Task(LocalFilesystemToGCSOperator): users_to_gcs> on 2024-05-28 08:36:54.613765+00:00
+[2024-05-28T08:37:00.119+0000] {standard_task_runner.py:60} INFO - Started process 6404 to run task
+[2024-05-28T08:37:00.128+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'csv_to_bigquery', 'users_to_gcs', 'manual__2024-05-28T08:36:54.613765+00:00', '--job-id', '319', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_bigquery.py', '--cfg-path', '/tmp/tmpgbfrpqfu']
+[2024-05-28T08:37:00.133+0000] {standard_task_runner.py:88} INFO - Job 319: Subtask users_to_gcs
+[2024-05-28T08:37:00.299+0000] {task_command.py:423} INFO - Running <TaskInstance: csv_to_bigquery.users_to_gcs manual__2024-05-28T08:36:54.613765+00:00 [running]> on host b4229c1d4fcf
+[2024-05-28T08:37:00.519+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='csv_to_bigquery' AIRFLOW_CTX_TASK_ID='users_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2024-05-28T08:36:54.613765+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-28T08:36:54.613765+00:00'
+[2024-05-28T08:37:00.539+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-05-28T08:37:00.561+0000] {base.py:83} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2024-05-28T08:38:14.703+0000] {gcs.py:555} INFO - File /opt/***/dags/playground/target/network_data/hello_1.csv uploaded to network_data/hello_1.csv in testing_bucket_df12 bucket
+[2024-05-28T08:38:14.723+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=csv_to_bigquery, task_id=users_to_gcs, execution_date=20240528T083654, start_date=20240528T083700, end_date=20240528T083814
+[2024-05-28T08:38:14.790+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-05-28T08:38:14.812+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

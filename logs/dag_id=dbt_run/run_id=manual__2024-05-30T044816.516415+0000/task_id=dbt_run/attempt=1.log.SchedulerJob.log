@@ -1,0 +1,2 @@
+[2024-05-30T04:48:20.160+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: dbt_run.dbt_run manual__2024-05-30T04:48:16.516415+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+[2024-05-30T04:48:41.890+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: dbt_run.dbt_run manual__2024-05-30T04:48:16.516415+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

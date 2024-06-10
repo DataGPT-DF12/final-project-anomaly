@@ -1,0 +1,21 @@
+[2024-05-20T02:23:27.644+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=api_available permission to 509
+[2024-05-20T02:23:27.645+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=api_available permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=api_available'
+[2024-05-20T02:23:27.681+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=api_available permission to 509
+[2024-05-20T02:23:27.683+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=api_available permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=api_available'
+[2024-05-20T02:23:27.713+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weekly_assignment.api_available manual__2024-05-20T02:23:22.481688+00:00 [queued]>
+[2024-05-20T02:23:27.730+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weekly_assignment.api_available manual__2024-05-20T02:23:22.481688+00:00 [queued]>
+[2024-05-20T02:23:27.731+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-05-20T02:23:27.747+0000] {taskinstance.py:2191} INFO - Executing <Task(HttpSensor): api_available> on 2024-05-20 02:23:22.481688+00:00
+[2024-05-20T02:23:27.758+0000] {standard_task_runner.py:60} INFO - Started process 2985 to run task
+[2024-05-20T02:23:27.762+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weekly_assignment', 'api_available', 'manual__2024-05-20T02:23:22.481688+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/weekly_assignment.py', '--cfg-path', '/tmp/tmphuue1c_x']
+[2024-05-20T02:23:27.766+0000] {standard_task_runner.py:88} INFO - Job 106: Subtask api_available
+[2024-05-20T02:23:27.869+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=api_available permission to 509
+[2024-05-20T02:23:27.870+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=api_available permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:23:22.481688+00:00/task_id=api_available'
+[2024-05-20T02:23:27.875+0000] {task_command.py:423} INFO - Running <TaskInstance: weekly_assignment.api_available manual__2024-05-20T02:23:22.481688+00:00 [running]> on host 3e756f125b35
+[2024-05-20T02:23:28.128+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weekly_assignment' AIRFLOW_CTX_TASK_ID='api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-05-20T02:23:22.481688+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-20T02:23:22.481688+00:00'
+[2024-05-20T02:23:28.134+0000] {http.py:130} INFO - Poking: users
+[2024-05-20T02:23:28.163+0000] {base.py:83} INFO - Using connection ID 'dummy_user' for task execution.
+[2024-05-20T02:23:31.778+0000] {base.py:295} INFO - Success criteria met. Exiting.
+[2024-05-20T02:23:31.792+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=weekly_assignment, task_id=api_available, execution_date=20240520T022322, start_date=20240520T022327, end_date=20240520T022331
+[2024-05-20T02:23:31.839+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-05-20T02:23:31.882+0000] {taskinstance.py:3280} INFO - 4 downstream tasks scheduled from follow-on schedule check

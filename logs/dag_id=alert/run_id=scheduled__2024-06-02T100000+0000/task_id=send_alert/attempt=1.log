@@ -1,0 +1,13 @@
+[2024-06-02T15:12:23.466+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alert.send_alert scheduled__2024-06-02T10:00:00+00:00 [queued]>
+[2024-06-02T15:12:23.490+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alert.send_alert scheduled__2024-06-02T10:00:00+00:00 [queued]>
+[2024-06-02T15:12:23.491+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-06-02T15:12:23.516+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): send_alert> on 2024-06-02 10:00:00+00:00
+[2024-06-02T15:12:23.526+0000] {standard_task_runner.py:60} INFO - Started process 8519 to run task
+[2024-06-02T15:12:23.531+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'alert', 'send_alert', 'scheduled__2024-06-02T10:00:00+00:00', '--job-id', '762', '--raw', '--subdir', 'DAGS_FOLDER/alert.py', '--cfg-path', '/tmp/tmp0egano1b']
+[2024-06-02T15:12:23.535+0000] {standard_task_runner.py:88} INFO - Job 762: Subtask send_alert
+[2024-06-02T15:12:23.646+0000] {task_command.py:423} INFO - Running <TaskInstance: alert.send_alert scheduled__2024-06-02T10:00:00+00:00 [running]> on host 6f8b2a20b5b0
+[2024-06-02T15:12:23.832+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alert' AIRFLOW_CTX_TASK_ID='send_alert' AIRFLOW_CTX_EXECUTION_DATE='2024-06-02T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-02T10:00:00+00:00'
+[2024-06-02T15:12:23.862+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-06-02T15:12:23.889+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=alert, task_id=send_alert, execution_date=20240602T100000, start_date=20240602T151223, end_date=20240602T151223
+[2024-06-02T15:12:23.950+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-06-02T15:12:24.069+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

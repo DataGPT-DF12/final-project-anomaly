@@ -1,0 +1,49 @@
+version: 2
+
+sources:
+  - name: raw
+    tables:
+      - name: usd_idr
+      - name: nyc_taxi_trip
+        columns:
+          - name: total_amount
+            tests:
+              - not_null
+          - name: lpep_pickup_datetime
+            tests:
+              - not_null
+          - name: lpep_dropoff_datetime
+            tests:
+              - not_null
+          - name: trip_distance 
+            tests:
+              - not_null
+              - dbt_utils.accepted_range:
+                  min_value: 0
+          - name: PULocationID
+            tests:
+              - not_null
+          - name: DOLocationID
+            tests:
+              - not_null
+          - name: fare_amount
+            tests:
+              - not_null
+          - name: extra
+            tests:
+              - not_null
+          - name: mta_tax
+            tests:
+              - not_null
+          - name: tip_amount
+            tests:
+              - not_null
+          - name: tolls_amount
+            tests:
+              - not_null
+              - dbt_utils.accepted_range:
+                  min_value: 0
+          - name: improvement_surcharge
+            tests:
+              - not_null
+

@@ -1,0 +1,113 @@
+[2024-06-01T16:44:29.746+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: send_email_example.airflow manual__2024-06-01T16:44:10.563404+00:00 [queued]>
+[2024-06-01T16:44:29.772+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: send_email_example.airflow manual__2024-06-01T16:44:10.563404+00:00 [queued]>
+[2024-06-01T16:44:29.773+0000] {taskinstance.py:2170} INFO - Starting attempt 3 of 3
+[2024-06-01T16:44:29.808+0000] {taskinstance.py:2191} INFO - Executing <Task(_PythonDecoratedOperator): airflow> on 2024-06-01 16:44:10.563404+00:00
+[2024-06-01T16:44:29.815+0000] {standard_task_runner.py:60} INFO - Started process 37523 to run task
+[2024-06-01T16:44:29.821+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'send_email_example', '***', 'manual__2024-06-01T16:44:10.563404+00:00', '--job-id', '592', '--raw', '--subdir', 'DAGS_FOLDER/send_email_example.py', '--cfg-path', '/tmp/tmppvhbnl2w']
+[2024-06-01T16:44:29.825+0000] {standard_task_runner.py:88} INFO - Job 592: Subtask ***
+[2024-06-01T16:44:29.914+0000] {task_command.py:423} INFO - Running <TaskInstance: send_email_example.airflow manual__2024-06-01T16:44:10.563404+00:00 [running]> on host 6204b7e2d2f9
+[2024-06-01T16:44:30.061+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='midyafannie@gmail.com' AIRFLOW_CTX_DAG_OWNER='Owner' AIRFLOW_CTX_DAG_ID='send_email_example' AIRFLOW_CTX_TASK_ID='***' AIRFLOW_CTX_EXECUTION_DATE='2024-06-01T16:44:10.563404+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-01T16:44:10.563404+00:00'
+[2024-06-01T16:44:30.066+0000] {logging_mixin.py:188} INFO - ***
+[2024-06-01T16:44:30.068+0000] {logging_mixin.py:188} INFO - TEST
+[2024-06-01T16:44:30.069+0000] {send_email_example.py:34} INFO - This is a log message !!!!!
+[2024-06-01T16:44:30.070+0000] {send_email_example.py:36} INFO - Here is some standard text.
+[2024-06-01T16:44:30.071+0000] {send_email_example.py:37} INFO - ::group::Non important details
+[2024-06-01T16:44:30.071+0000] {send_email_example.py:38} INFO - bla
+[2024-06-01T16:44:30.072+0000] {send_email_example.py:39} INFO - debug messages...
+[2024-06-01T16:44:30.072+0000] {send_email_example.py:40} INFO - ::endgroup::
+[2024-06-01T16:44:30.073+0000] {send_email_example.py:41} INFO - Here is again some standard text.
+[2024-06-01T16:44:30.074+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/base.py", line 241, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/send_email_example.py", line 43, in airflow
+    raise Exception("Test Error !@#$%^")
+Exception: Test Error !@#$%^
+[2024-06-01T16:44:30.094+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=send_email_example, task_id=***, execution_date=20240601T164410, start_date=20240601T164429, end_date=20240601T164430
+[2024-06-01T16:44:30.126+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-06-01T16:44:30.127+0000] {configuration.py:1046} WARNING - section/key [smtp/smtp_user] not found in config
+[2024-06-01T16:44:30.129+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-06-01T16:44:30.142+0000] {configuration.py:1046} WARNING - section/key [smtp/smtp_user] not found in config
+[2024-06-01T16:44:30.144+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-06-01T16:44:30.145+0000] {taskinstance.py:826} ERROR - Failed to send email to: ['midyafannie@gmail.com']
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2334, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode, session=session)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2499, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2516, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/base.py", line 241, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/send_email_example.py", line 43, in airflow
+    raise Exception("Test Error !@#$%^")
+Exception: Test Error !@#$%^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1000, in _email_alert
+    send_email(task.email, subject, html_content)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 154, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 272, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 316, in _get_smtp_connection
+    return smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/local/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 824, in _handle_failure
+    task_instance.email_alert(error, failure_context["task"])
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2946, in email_alert
+    _email_alert(task_instance=self, exception=exception, task=task)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1002, in _email_alert
+    send_email(task.email, subject, html_content_err)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 154, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 272, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 316, in _get_smtp_connection
+    return smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/local/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2024-06-01T16:44:30.177+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 592 for task *** (Test Error !@#$%^; 37523)
+[2024-06-01T16:44:30.197+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-06-01T16:44:30.223+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

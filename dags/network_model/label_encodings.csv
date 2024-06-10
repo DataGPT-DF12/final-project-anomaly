@@ -1,0 +1,13 @@
+column,original,encoded
+protocol,tcp,0
+direction,   ->,0
+direction,   ?>,1
+state,A_,0
+state,R_,1
+state,S_,2
+label,Background,0
+label,Background-Attempt-cmpgw-CVUT,1
+label,Background-Established-cmpgw-CVUT,2
+label,Background-TCP-Attempt,3
+label,From-Botnet-V42-TCP-Attempt,4
+label,From-Botnet-V42-TCP-Attempt-SPAM,5

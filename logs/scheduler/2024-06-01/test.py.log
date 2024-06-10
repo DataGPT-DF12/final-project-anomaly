@@ -1,0 +1,299 @@
+[2024-06-01T16:02:00.267+0000] {processor.py:161} INFO - Started process (PID=30758) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:02:00.271+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:02:00.277+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:02:00.276+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:02:00.501+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:02:00.474+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:02:00.504+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:02:00.622+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.364 seconds
+[2024-06-01T16:02:31.241+0000] {processor.py:161} INFO - Started process (PID=30839) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:02:31.243+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:02:31.246+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:02:31.245+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:02:31.271+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:02:31.266+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:02:31.272+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:02:31.309+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.071 seconds
+[2024-06-01T16:03:01.414+0000] {processor.py:161} INFO - Started process (PID=30920) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:03:01.415+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:03:01.417+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:03:01.417+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:03:01.439+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:03:01.435+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:03:01.440+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:03:01.462+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.051 seconds
+[2024-06-01T16:03:31.600+0000] {processor.py:161} INFO - Started process (PID=31001) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:03:31.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:03:31.604+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:03:31.603+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:03:31.625+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:03:31.620+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:03:31.627+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:03:31.647+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.050 seconds
+[2024-06-01T16:04:02.547+0000] {processor.py:161} INFO - Started process (PID=31082) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:04:02.549+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:04:02.551+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:04:02.551+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:04:02.588+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:04:02.580+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:04:02.590+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:04:02.618+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.077 seconds
+[2024-06-01T16:04:32.947+0000] {processor.py:161} INFO - Started process (PID=31163) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:04:32.952+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:04:32.958+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:04:32.957+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:04:33.034+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:04:33.020+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:04:33.036+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:04:33.108+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.171 seconds
+[2024-06-01T16:05:04.004+0000] {processor.py:161} INFO - Started process (PID=31244) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:05:04.008+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:05:04.014+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:05:04.013+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:05:04.061+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:05:04.047+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:05:04.064+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:05:04.117+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.119 seconds
+[2024-06-01T16:05:35.034+0000] {processor.py:161} INFO - Started process (PID=31327) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:05:35.036+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:05:35.039+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:05:35.038+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:05:35.070+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:05:35.065+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:05:35.071+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:05:35.118+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.088 seconds
+[2024-06-01T16:06:05.819+0000] {processor.py:161} INFO - Started process (PID=31408) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:06:05.821+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:06:05.824+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:06:05.824+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:06:05.849+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:06:05.843+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:06:05.851+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:06:05.882+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.068 seconds
+[2024-06-01T16:06:36.480+0000] {processor.py:161} INFO - Started process (PID=31489) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:06:36.483+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:06:36.488+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:06:36.487+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:06:36.512+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:06:36.506+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:06:36.514+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:06:36.545+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.069 seconds
+[2024-06-01T16:07:07.140+0000] {processor.py:161} INFO - Started process (PID=31570) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:07:07.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:07:07.148+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:07:07.147+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:07:07.175+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:07:07.170+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:07:07.177+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:07:07.210+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.073 seconds
+[2024-06-01T16:07:37.392+0000] {processor.py:161} INFO - Started process (PID=31651) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:07:37.394+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:07:37.396+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:07:37.396+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:07:37.418+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:07:37.414+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:07:37.419+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:07:37.440+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.051 seconds
+[2024-06-01T16:08:08.426+0000] {processor.py:161} INFO - Started process (PID=31732) to work on /opt/airflow/dags/test.py
+[2024-06-01T16:08:08.428+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-06-01T16:08:08.430+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:08:08.429+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-06-01T16:08:08.453+0000] {logging_mixin.py:188} INFO - [2024-06-01T16:08:08.447+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 35, in <module>
+    send_email_task = EmailOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/email.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 793, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmailOperator (task_id: send_email). Invalid arguments were:
+**kwargs: {'smtp_conn_id': None, 'smtp_host': 'smtp.gmail.com', 'smtp_starttls': True, 'smtp_ssl': False, 'smtp_user': 'midyafn@gmail.com', 'smtp_password': 'knno yunb ijag ccgq', 'smtp_port': 587, 'smtp_mail_from': 'midyafn@gmail.com'}
+[2024-06-01T16:08:08.454+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-06-01T16:08:08.475+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test.py took 0.051 seconds

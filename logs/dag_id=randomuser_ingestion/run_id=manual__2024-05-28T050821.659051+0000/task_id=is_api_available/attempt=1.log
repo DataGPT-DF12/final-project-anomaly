@@ -1,0 +1,15 @@
+[2024-05-28T05:08:24.604+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: randomuser_ingestion.is_api_available manual__2024-05-28T05:08:21.659051+00:00 [queued]>
+[2024-05-28T05:08:24.635+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: randomuser_ingestion.is_api_available manual__2024-05-28T05:08:21.659051+00:00 [queued]>
+[2024-05-28T05:08:24.637+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-05-28T05:08:24.673+0000] {taskinstance.py:2191} INFO - Executing <Task(HttpSensor): is_api_available> on 2024-05-28 05:08:21.659051+00:00
+[2024-05-28T05:08:24.683+0000] {standard_task_runner.py:60} INFO - Started process 5364 to run task
+[2024-05-28T05:08:24.688+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'randomuser_ingestion', 'is_api_available', 'manual__2024-05-28T05:08:21.659051+00:00', '--job-id', '283', '--raw', '--subdir', 'DAGS_FOLDER/randomuser_ingestion.py', '--cfg-path', '/tmp/tmp1zohh9_g']
+[2024-05-28T05:08:24.693+0000] {standard_task_runner.py:88} INFO - Job 283: Subtask is_api_available
+[2024-05-28T05:08:24.781+0000] {task_command.py:423} INFO - Running <TaskInstance: randomuser_ingestion.is_api_available manual__2024-05-28T05:08:21.659051+00:00 [running]> on host 57cf5c93792a
+[2024-05-28T05:08:24.936+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='randomuser_ingestion' AIRFLOW_CTX_TASK_ID='is_api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-05-28T05:08:21.659051+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-28T05:08:21.659051+00:00'
+[2024-05-28T05:08:24.939+0000] {http.py:130} INFO - Poking: /api
+[2024-05-28T05:08:24.959+0000] {base.py:83} INFO - Using connection ID 'randomuser_api' for task execution.
+[2024-05-28T05:08:27.051+0000] {base.py:295} INFO - Success criteria met. Exiting.
+[2024-05-28T05:08:27.083+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=randomuser_ingestion, task_id=is_api_available, execution_date=20240528T050821, start_date=20240528T050824, end_date=20240528T050827
+[2024-05-28T05:08:27.200+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-05-28T05:08:27.285+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

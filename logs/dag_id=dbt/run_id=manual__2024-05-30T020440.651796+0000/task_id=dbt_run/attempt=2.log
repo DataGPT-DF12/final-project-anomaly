@@ -1,0 +1,25 @@
+[2024-05-30T02:09:47.283+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt.dbt_run manual__2024-05-30T02:04:40.651796+00:00 [queued]>
+[2024-05-30T02:09:47.307+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt.dbt_run manual__2024-05-30T02:04:40.651796+00:00 [queued]>
+[2024-05-30T02:09:47.309+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2024-05-30T02:09:47.351+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_run> on 2024-05-30 02:04:40.651796+00:00
+[2024-05-30T02:09:47.362+0000] {standard_task_runner.py:60} INFO - Started process 10570 to run task
+[2024-05-30T02:09:47.370+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dbt', 'dbt_run', 'manual__2024-05-30T02:04:40.651796+00:00', '--job-id', '401', '--raw', '--subdir', 'DAGS_FOLDER/dbt.py', '--cfg-path', '/tmp/tmp1i8i_218']
+[2024-05-30T02:09:47.375+0000] {standard_task_runner.py:88} INFO - Job 401: Subtask dbt_run
+[2024-05-30T02:09:47.501+0000] {task_command.py:423} INFO - Running <TaskInstance: dbt.dbt_run manual__2024-05-30T02:04:40.651796+00:00 [running]> on host dd00f1ab2b6c
+[2024-05-30T02:09:47.713+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2024-05-30T02:04:40.651796+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-30T02:04:40.651796+00:00'
+[2024-05-30T02:09:47.718+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-30T02:09:47.731+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'powershell.exe -Command "dbt run --project-dir C:/***/dags/dbt/network"']
+[2024-05-30T02:09:47.755+0000] {subprocess.py:86} INFO - Output:
+[2024-05-30T02:09:47.772+0000] {subprocess.py:93} INFO - /usr/bin/bash: line 1: powershell.exe: command not found
+[2024-05-30T02:09:47.775+0000] {subprocess.py:97} INFO - Command exited with return code 127
+[2024-05-30T02:09:47.800+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2024-05-30T02:09:47.812+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=dbt, task_id=dbt_run, execution_date=20240530T020440, start_date=20240530T020947, end_date=20240530T020947
+[2024-05-30T02:09:47.851+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 401 for task dbt_run (Bash command failed. The command returned a non-zero exit code 127.; 10570)
+[2024-05-30T02:09:47.876+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-05-30T02:09:47.920+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

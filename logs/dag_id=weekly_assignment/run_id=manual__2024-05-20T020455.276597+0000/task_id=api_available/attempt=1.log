@@ -1,0 +1,41 @@
+[2024-05-20T02:04:57.321+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:04:55.276597+00:00/task_id=api_available permission to 509
+[2024-05-20T02:04:57.323+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:04:55.276597+00:00/task_id=api_available permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:04:55.276597+00:00/task_id=api_available'
+[2024-05-20T02:04:57.355+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:04:55.276597+00:00/task_id=api_available permission to 509
+[2024-05-20T02:04:57.357+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:04:55.276597+00:00/task_id=api_available permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:04:55.276597+00:00/task_id=api_available'
+[2024-05-20T02:04:57.387+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weekly_assignment.api_available manual__2024-05-20T02:04:55.276597+00:00 [queued]>
+[2024-05-20T02:04:57.401+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weekly_assignment.api_available manual__2024-05-20T02:04:55.276597+00:00 [queued]>
+[2024-05-20T02:04:57.402+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-05-20T02:04:57.420+0000] {taskinstance.py:2191} INFO - Executing <Task(HttpSensor): api_available> on 2024-05-20 02:04:55.276597+00:00
+[2024-05-20T02:04:57.430+0000] {standard_task_runner.py:60} INFO - Started process 1134 to run task
+[2024-05-20T02:04:57.435+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weekly_assignment', 'api_available', 'manual__2024-05-20T02:04:55.276597+00:00', '--job-id', '56', '--raw', '--subdir', 'DAGS_FOLDER/weekly_assignment.py', '--cfg-path', '/tmp/tmp4ylqoxik']
+[2024-05-20T02:04:57.437+0000] {standard_task_runner.py:88} INFO - Job 56: Subtask api_available
+[2024-05-20T02:04:57.512+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:04:55.276597+00:00/task_id=api_available permission to 509
+[2024-05-20T02:04:57.513+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:04:55.276597+00:00/task_id=api_available permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:04:55.276597+00:00/task_id=api_available'
+[2024-05-20T02:04:57.518+0000] {task_command.py:423} INFO - Running <TaskInstance: weekly_assignment.api_available manual__2024-05-20T02:04:55.276597+00:00 [running]> on host 3e756f125b35
+[2024-05-20T02:04:57.708+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weekly_assignment' AIRFLOW_CTX_TASK_ID='api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-05-20T02:04:55.276597+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-20T02:04:55.276597+00:00'
+[2024-05-20T02:04:57.709+0000] {http.py:130} INFO - Poking: users
+[2024-05-20T02:04:57.735+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/base.py", line 265, in execute
+    raise e
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/base.py", line 247, in execute
+    poke_return = self.poke(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/http/sensors/http.py", line 148, in poke
+    raise exc
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/http/sensors/http.py", line 132, in poke
+    response = hook.run(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/http/hooks/http.py", line 145, in run
+    session = self.get_conn(headers)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/http/hooks/http.py", line 98, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 82, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 479, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `dummy_user` isn't defined
+[2024-05-20T02:04:57.741+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=weekly_assignment, task_id=api_available, execution_date=20240520T020455, start_date=20240520T020457, end_date=20240520T020457
+[2024-05-20T02:04:57.758+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 56 for task api_available (The conn_id `dummy_user` isn't defined; 1134)
+[2024-05-20T02:04:57.809+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-05-20T02:04:57.853+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

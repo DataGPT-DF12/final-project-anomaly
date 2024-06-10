@@ -1,0 +1,35 @@
+[2024-05-20T02:32:43.508+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:32:11.242889+00:00/task_id=load_carts_to_bigquery permission to 509
+[2024-05-20T02:32:43.509+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:32:11.242889+00:00/task_id=load_carts_to_bigquery permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:32:11.242889+00:00/task_id=load_carts_to_bigquery'
+[2024-05-20T02:32:43.546+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:32:11.242889+00:00/task_id=load_carts_to_bigquery permission to 509
+[2024-05-20T02:32:43.547+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:32:11.242889+00:00/task_id=load_carts_to_bigquery permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:32:11.242889+00:00/task_id=load_carts_to_bigquery'
+[2024-05-20T02:32:43.580+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weekly_assignment.load_carts_to_bigquery manual__2024-05-20T02:32:11.242889+00:00 [queued]>
+[2024-05-20T02:32:43.591+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weekly_assignment.load_carts_to_bigquery manual__2024-05-20T02:32:11.242889+00:00 [queued]>
+[2024-05-20T02:32:43.592+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-05-20T02:32:43.609+0000] {taskinstance.py:2191} INFO - Executing <Task(GCSToBigQueryOperator): load_carts_to_bigquery> on 2024-05-20 02:32:11.242889+00:00
+[2024-05-20T02:32:43.617+0000] {standard_task_runner.py:60} INFO - Started process 3958 to run task
+[2024-05-20T02:32:43.620+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weekly_assignment', 'load_carts_to_bigquery', 'manual__2024-05-20T02:32:11.242889+00:00', '--job-id', '152', '--raw', '--subdir', 'DAGS_FOLDER/weekly_assignment.py', '--cfg-path', '/tmp/tmpyf98frfh']
+[2024-05-20T02:32:43.623+0000] {standard_task_runner.py:88} INFO - Job 152: Subtask load_carts_to_bigquery
+[2024-05-20T02:32:43.674+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:32:11.242889+00:00/task_id=load_carts_to_bigquery permission to 509
+[2024-05-20T02:32:43.676+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:32:11.242889+00:00/task_id=load_carts_to_bigquery permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=weekly_assignment/run_id=manual__2024-05-20T02:32:11.242889+00:00/task_id=load_carts_to_bigquery'
+[2024-05-20T02:32:43.678+0000] {task_command.py:423} INFO - Running <TaskInstance: weekly_assignment.load_carts_to_bigquery manual__2024-05-20T02:32:11.242889+00:00 [running]> on host 3e756f125b35
+[2024-05-20T02:32:43.765+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weekly_assignment' AIRFLOW_CTX_TASK_ID='load_carts_to_bigquery' AIRFLOW_CTX_EXECUTION_DATE='2024-05-20T02:32:11.242889+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-20T02:32:11.242889+00:00'
+[2024-05-20T02:32:43.779+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-05-20T02:32:43.784+0000] {base.py:83} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2024-05-20T02:32:43.786+0000] {gcs_to_bigquery.py:379} INFO - Using existing BigQuery table for storing data...
+[2024-05-20T02:32:43.824+0000] {gcs_to_bigquery.py:383} INFO - Executing: {'load': {'autodetect': True, 'createDisposition': 'CREATE_IF_NEEDED', 'destinationTable': {'projectId': 'stately-node-363801', 'datasetId': 'weekly_6', 'tableId': 'carts'}, 'sourceFormat': 'CSV', 'sourceUris': ['gs://weekly_6/weekly_6/carts/carts.csv'], 'writeDisposition': 'WRITE_TRUNCATE', 'ignoreUnknownValues': False, 'skipLeadingRows': 1, 'fieldDelimiter': ',', 'quote': None, 'allowQuotedNewlines': False, 'encoding': 'UTF-8'}}
+[2024-05-20T02:32:43.827+0000] {bigquery.py:1596} INFO - Inserting job ***_weekly_assignment_load_carts_to_bigquery_2024_05_20T02_32_11_242889_00_00_eaed491c638569f616945f89b8986433
+[2024-05-20T02:32:50.914+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/gcs_to_bigquery.py", line 442, in execute
+    job.result(timeout=self.result_timeout, retry=self.result_retry)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 971, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: URI gs://weekly_6/weekly_6/carts/carts.csv; reason: notFound, message: Not found: URI gs://weekly_6/weekly_6/carts/carts.csv
+[2024-05-20T02:32:50.923+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=weekly_assignment, task_id=load_carts_to_bigquery, execution_date=20240520T023211, start_date=20240520T023243, end_date=20240520T023250
+[2024-05-20T02:32:50.939+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 152 for task load_carts_to_bigquery (404 Not found: URI gs://weekly_6/weekly_6/carts/carts.csv; reason: notFound, message: Not found: URI gs://weekly_6/weekly_6/carts/carts.csv; 3958)
+[2024-05-20T02:32:50.991+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-05-20T02:32:51.009+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

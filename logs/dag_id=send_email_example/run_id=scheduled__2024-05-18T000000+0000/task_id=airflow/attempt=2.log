@@ -1,0 +1,35 @@
+[2024-06-01T16:44:03.814+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: send_email_example.airflow scheduled__2024-05-18T00:00:00+00:00 [queued]>
+[2024-06-01T16:44:03.834+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: send_email_example.airflow scheduled__2024-05-18T00:00:00+00:00 [queued]>
+[2024-06-01T16:44:03.835+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 3
+[2024-06-01T16:44:03.857+0000] {taskinstance.py:2191} INFO - Executing <Task(_PythonDecoratedOperator): airflow> on 2024-05-18 00:00:00+00:00
+[2024-06-01T16:44:03.864+0000] {standard_task_runner.py:60} INFO - Started process 37441 to run task
+[2024-06-01T16:44:03.870+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'send_email_example', '***', 'scheduled__2024-05-18T00:00:00+00:00', '--job-id', '587', '--raw', '--subdir', 'DAGS_FOLDER/send_email_example.py', '--cfg-path', '/tmp/tmp1ax2uecw']
+[2024-06-01T16:44:03.873+0000] {standard_task_runner.py:88} INFO - Job 587: Subtask ***
+[2024-06-01T16:44:03.945+0000] {task_command.py:423} INFO - Running <TaskInstance: send_email_example.airflow scheduled__2024-05-18T00:00:00+00:00 [running]> on host 6204b7e2d2f9
+[2024-06-01T16:44:04.087+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='midyafannie@gmail.com' AIRFLOW_CTX_DAG_OWNER='Owner' AIRFLOW_CTX_DAG_ID='send_email_example' AIRFLOW_CTX_TASK_ID='***' AIRFLOW_CTX_EXECUTION_DATE='2024-05-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-18T00:00:00+00:00'
+[2024-06-01T16:44:04.090+0000] {logging_mixin.py:188} INFO - ***
+[2024-06-01T16:44:04.091+0000] {logging_mixin.py:188} INFO - TEST
+[2024-06-01T16:44:04.092+0000] {send_email_example.py:34} INFO - This is a log message !!!!!
+[2024-06-01T16:44:04.093+0000] {send_email_example.py:36} INFO - Here is some standard text.
+[2024-06-01T16:44:04.093+0000] {send_email_example.py:37} INFO - ::group::Non important details
+[2024-06-01T16:44:04.093+0000] {send_email_example.py:38} INFO - bla
+[2024-06-01T16:44:04.093+0000] {send_email_example.py:39} INFO - debug messages...
+[2024-06-01T16:44:04.094+0000] {send_email_example.py:40} INFO - ::endgroup::
+[2024-06-01T16:44:04.095+0000] {send_email_example.py:41} INFO - Here is again some standard text.
+[2024-06-01T16:44:04.096+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/base.py", line 241, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/send_email_example.py", line 43, in airflow
+    raise Exception("Test Error !@#$%^")
+Exception: Test Error !@#$%^
+[2024-06-01T16:44:04.112+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=send_email_example, task_id=***, execution_date=20240518T000000, start_date=20240601T164403, end_date=20240601T164404
+[2024-06-01T16:44:04.128+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 587 for task *** (Test Error !@#$%^; 37441)
+[2024-06-01T16:44:04.165+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-06-01T16:44:04.190+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,23 @@
+[2024-05-20T01:54:14.182+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=demo/run_id=scheduled__2024-05-12T00:00:00+00:00/task_id=demo permission to 509
+[2024-05-20T01:54:14.194+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=demo/run_id=scheduled__2024-05-12T00:00:00+00:00/task_id=demo permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=demo/run_id=scheduled__2024-05-12T00:00:00+00:00/task_id=demo'
+[2024-05-20T01:54:14.751+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=demo/run_id=scheduled__2024-05-12T00:00:00+00:00/task_id=demo permission to 509
+[2024-05-20T01:54:14.781+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=demo/run_id=scheduled__2024-05-12T00:00:00+00:00/task_id=demo permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=demo/run_id=scheduled__2024-05-12T00:00:00+00:00/task_id=demo'
+[2024-05-20T01:54:17.612+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demo.demo scheduled__2024-05-12T00:00:00+00:00 [queued]>
+[2024-05-20T01:54:17.666+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demo.demo scheduled__2024-05-12T00:00:00+00:00 [queued]>
+[2024-05-20T01:54:17.679+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-05-20T01:54:18.114+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): demo> on 2024-05-12 00:00:00+00:00
+[2024-05-20T01:54:18.164+0000] {standard_task_runner.py:60} INFO - Started process 347 to run task
+[2024-05-20T01:54:18.267+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'demo', 'demo', 'scheduled__2024-05-12T00:00:00+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/demo.py', '--cfg-path', '/tmp/tmpf1s0vgsp']
+[2024-05-20T01:54:18.315+0000] {standard_task_runner.py:88} INFO - Job 14: Subtask demo
+[2024-05-20T01:54:19.077+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=demo/run_id=scheduled__2024-05-12T00:00:00+00:00/task_id=demo permission to 509
+[2024-05-20T01:54:19.097+0000] {logging_mixin.py:188} INFO - Failed to change /opt/***/logs/dag_id=demo/run_id=scheduled__2024-05-12T00:00:00+00:00/task_id=demo permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=demo/run_id=scheduled__2024-05-12T00:00:00+00:00/task_id=demo'
+[2024-05-20T01:54:19.128+0000] {task_command.py:423} INFO - Running <TaskInstance: demo.demo scheduled__2024-05-12T00:00:00+00:00 [running]> on host 3e756f125b35
+[2024-05-20T01:54:20.476+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='demo' AIRFLOW_CTX_TASK_ID='demo' AIRFLOW_CTX_EXECUTION_DATE='2024-05-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-12T00:00:00+00:00'
+[2024-05-20T01:54:20.506+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-20T01:54:20.515+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo hello']
+[2024-05-20T01:54:20.594+0000] {subprocess.py:86} INFO - Output:
+[2024-05-20T01:54:20.606+0000] {subprocess.py:93} INFO - hello
+[2024-05-20T01:54:20.615+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-20T01:54:20.739+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=demo, task_id=demo, execution_date=20240512T000000, start_date=20240520T015417, end_date=20240520T015420
+[2024-05-20T01:54:21.650+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-05-20T01:54:22.280+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

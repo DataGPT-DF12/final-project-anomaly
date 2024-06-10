@@ -1,0 +1,14 @@
+network:
+  outputs:
+    dev:
+      dataset: network
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: /opt/airflow/dags/dbt/network/credentials/dbt-executor.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: stately-node-363801
+      threads: 1
+      type: bigquery
+  target: dev
